@@ -8,7 +8,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** True.
 
@@ -30,7 +30,7 @@ APACHE
 None of these choices
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `HTTP (HyperText Transfer Protocol).`
 
@@ -53,7 +53,7 @@ Foreign key
 Shared key
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `The private key.`
 
@@ -75,7 +75,7 @@ AccessLog
 Access
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** TransferLog.
 
@@ -95,7 +95,7 @@ Enter the command line to look up the NS record for the domain "happy.org" using
 the nslookup command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `nslookup -type=NS happy.org`
 
@@ -112,7 +112,7 @@ Explanation: The nslookup utility can query specific DNS record types by using t
 ## Q6. Which file controls static hostname resolution?
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `The /etc/hosts file.`
 
@@ -129,7 +129,7 @@ Explanation: /etc/hosts is the local file for static hostname resolution on a Li
 ## Q7. What is the command used to start service "foobar" upon system boot up?
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl enable foobar`
 
@@ -150,7 +150,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** True.
 
@@ -168,7 +168,7 @@ Explanation: It is best practice to have both the IPv4 and IPv6 loopback address
 command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `dig -x 172.16.30.167`
 
@@ -186,7 +186,7 @@ Explanation: The dig command’s -x option performs a reverse DNS lookup (i.e. q
 DNS (172.16.31.167) using the dig command from another Linux machine.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `dig @172.16.31.167 -x 172.16.31.167`
 
@@ -213,7 +213,7 @@ Breaking it down: -x 172.16.31.167 asks for the PTR record of 172.16.31.167 (rev
 /etc/httpd
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** who
 
@@ -238,7 +238,7 @@ who displays the list of users currently logged into the system, along with term
 7. systemctl list-units -t service			lists all running services
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** whoami
 
@@ -261,7 +261,7 @@ Setup referrals to other web servers
 Have web sites for multiple sites on the same server system
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ls -a`
 
@@ -285,7 +285,7 @@ the package bind?
 /etc/sysconfig/named.conf
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** pwd
 
@@ -307,7 +307,7 @@ inbound
 outbound
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `Moves up one directory level.`
 
@@ -332,7 +332,7 @@ Postfix is listening only on port 25
 "mydestination" is incorrectly configured
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `Detailed list including permissions, owner, group, size, and timestamps.`
 
@@ -352,7 +352,7 @@ The client connection to the server is based on hostname and port number.
 The client connection to the server is based on IP address and port number, and the hostname is included in the client request.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `Creates an empty file or updates its timestamp.`
 
@@ -376,7 +376,7 @@ ip show ens33
 ip ens33
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** rm
 
@@ -399,7 +399,7 @@ ip listen
 ss listen
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** mkdir
 
@@ -421,7 +421,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** cp
 
@@ -442,7 +442,7 @@ Enter the command line to look up the PTR record for "172.16.31.167" on the
 teacher's slave DNS (172.16.31.167) using the nslookup command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** mv
 
@@ -463,7 +463,7 @@ Enter the command line to look up the NS record for the domain "happy.org" using
 the host command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** cat
 
@@ -488,7 +488,7 @@ Idapadm
 The LDAP adminstrator
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** head
 
@@ -511,7 +511,7 @@ head displays the first 10 lines of a file by default. The number of lines can b
 /etc/http/conf/httpd.conf
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** tail
 
@@ -535,7 +535,7 @@ The user receiving the email
 The sending email server
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** grep
 
@@ -556,7 +556,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** chmod
 
@@ -580,7 +580,7 @@ ss route
 ss show route
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** chown
 
@@ -604,7 +604,7 @@ The server has to be setup to "host" for the domain.
 The server has to be setup to "relay" for the domain.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** du
 
@@ -623,7 +623,7 @@ du shows the space used by files and directories, optionally summarizing totals 
 system boot up?
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** df
 
@@ -647,7 +647,7 @@ Resolve host names into IP addresses
 Manage network configuration for client systems
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** ps
 
@@ -670,7 +670,7 @@ secured
 ipchains
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** top
 
@@ -691,7 +691,7 @@ Enter the command line to look up the PTR record for "172.16.30.167" using the
 nslookup command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** man
 
@@ -712,7 +712,7 @@ Enter the command line to look up the PTR record for "172.16.31.167" on the
 teacher's master DNS (172.16.30.167) using the host command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** which
 
@@ -737,7 +737,7 @@ Three (3)
 It cannot be done.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** passwd
 
@@ -761,7 +761,7 @@ AuthorizedKeysFile
 PubkeyAuthentication
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ifconfig (or ip addr on modern systems)`
 
@@ -784,7 +784,7 @@ ifconfig displays interface names, IP addresses, netmasks, and status. It’s be
 /etc/resolv.conf
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** ping
 
@@ -806,7 +806,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `traceroute (or tracepath)`
 
@@ -825,7 +825,7 @@ traceroute maps the path packets take, listing each hop and its response time, u
 teacher's DNS (172.16.30.167) using the host command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `netstat (or ss)`
 
@@ -849,7 +849,7 @@ the package bind?
 /etc/named.conf
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** wget
 
@@ -872,7 +872,7 @@ HTTP that includes additional security modules defined by the HTTPS protocol
 A newer version of the HTTP protocol
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** scp
 
@@ -894,7 +894,7 @@ scp uses SSH to copy files securely between hosts. It encrypts both the command 
 3. -- line-numbers		Show line numbers
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** ssh
 
@@ -912,7 +912,7 @@ ssh opens a secure, encrypted shell session on a remote host, replacing older in
 ## Q42. Record the command used to verify that the service "foobar" is currently running.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** lsmod
 
@@ -933,7 +933,7 @@ Enter the command line to resolve the A record for "www.happy.org" using your
 default resolver configuration.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** modprobe
 
@@ -956,7 +956,7 @@ three
 four
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** rmmod
 
@@ -974,7 +974,7 @@ rmmod unloads a kernel module from memory. Often replaced by modprobe -r for dep
 ## Q45. Record the command that lists all running services.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** dmesg
 
@@ -992,7 +992,7 @@ dmesg prints kernel ring buffer messages, often showing hardware initialization 
 ## Q46. Which command is used to show or set your hostname?
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `yum install (or dnf install on newer systems)`
 
@@ -1016,7 +1016,7 @@ errorlog.log
 errorlog
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `yum update (or dnf upgrade)`
 
@@ -1035,7 +1035,7 @@ This command updates all packages to the latest available versions from enabled 
 /etc/nsswitch.conf
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `yum remove (or dnf remove)`
 
@@ -1058,7 +1058,7 @@ Mail Submission Agent, Mail Transfer Agent, Mail Delivery Agent
 Mail User Agent, Mail Submission Agent, Mail Delivery Agent
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl start <service>`
 
@@ -1082,7 +1082,7 @@ Maintain and share directory information
 None of the above
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl enable <service>`
 
@@ -1105,7 +1105,7 @@ Mail User Agent
 Mail Delivery Agent
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl stop <service>`
 
@@ -1126,7 +1126,7 @@ Enter the command line to look up the MX record for the domain "happy.org" using
 the host command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl disable <service>`
 
@@ -1149,7 +1149,7 @@ All the ethernet adapters
 All the ethernet adapters and localhost
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl restart <service>`
 
@@ -1170,7 +1170,7 @@ Enter the command line to look up the PTR record for "172.16.30.167" using the
 host command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl status <service>`
 
@@ -1192,7 +1192,7 @@ One DocumentRoot directive for each virtual host and one ServerName directive fo
 One DocumentRoot directive and one ServerName directive for each virtual host
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `setenforce 0`
 
@@ -1215,7 +1215,7 @@ example.lab. IN MX 10 mail.example.lab.
 mail.example.lab. IN MX 10 example.lab.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `Edit /etc/selinux/config and set SELINUX=permissive`
 
@@ -1242,7 +1242,7 @@ mail -s Test Email user8213@host.cst8213.lab
 mail -s TestEmail user8213@host.cst8213.lab
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** getenforce
 
@@ -1266,7 +1266,7 @@ postqueue -p
 postqueue -v
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** chcon
 
@@ -1286,7 +1286,7 @@ inbound		 ?
 outbound
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** restorecon
 
@@ -1309,7 +1309,7 @@ restorecon re-applies the default SELinux context from policy to the file path.
 4. ACCEPT	Let the packet through
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ls -Z`
 
@@ -1332,7 +1332,7 @@ Listen
 80
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --list-all-zones`
 
@@ -1355,7 +1355,7 @@ domain
 person
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --list-all`
 
@@ -1376,7 +1376,7 @@ Enter the command line to resolve the A record for "www.happy.org" using your
 professor's DNS at 172.16.30.167 using your preferred command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --permanent --add-service=http`
 
@@ -1398,7 +1398,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --reload`
 
@@ -1427,7 +1427,7 @@ The dc attribute does not have a valid value
 The syntax for the attributes should use an = sign, not a colon, as in sn=Jones
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --add-service=https`
 
@@ -1449,7 +1449,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --permanent --remove-service=ssh`
 
@@ -1470,7 +1470,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --get-default-zone`
 
@@ -1491,7 +1491,7 @@ Enter the command line to look up the MX record for the domain "happy.org" using
 the nslookup command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --set-default-zone=<zone>`
 
@@ -1516,7 +1516,7 @@ ip show
 ip
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --get-services`
 
@@ -1540,7 +1540,7 @@ AuthorizedKeysFile
 PubkeyAuthentication
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `firewall-cmd --query-service=<service>`
 
@@ -1565,7 +1565,7 @@ ditmodify
 ditdelete
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ip addr show`
 
@@ -1589,7 +1589,7 @@ ip
 All of these choices
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ip route show`
 
@@ -1609,7 +1609,7 @@ package "foobar"?
 A/
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ping <host>`
 
@@ -1633,7 +1633,7 @@ dig MX example.lab
 dig mx.example.lab
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `traceroute <host>`
 
@@ -1654,7 +1654,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `dig <domain>`
 
@@ -1677,7 +1677,7 @@ ip listen
 ss listen
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `nslookup <domain>`
 
@@ -1698,7 +1698,7 @@ Enter the command line to look up the PTR record for "172.16.31.167" on your
 master DNS (172.16.30.167) using the dig command from another Linux machine.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ss -tuln`
 
@@ -1728,7 +1728,7 @@ Help
 6. -h
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `telnet <host> <port>`
 
@@ -1755,7 +1755,7 @@ numeric output
 4. n
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `hostname`
 
@@ -1780,7 +1780,7 @@ ditdelete
 Idapadd
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `hostnamectl set-hostname <name>`
 
@@ -1798,7 +1798,7 @@ Changes hostname without reboot; persists unless overridden by DHCP or cloud-ini
 ## Q81. Write the command used to display the running log file for the Postfix mail server:
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `dnf install postfix`
 
@@ -1822,7 +1822,7 @@ Not having a file specified in the client configuration
 Network connectivity
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** swift
 
@@ -1847,7 +1847,7 @@ Idapmodify
 ditmodify
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `/etc/postfix/main.cf`
 
@@ -1871,7 +1871,7 @@ root
 nobody
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl reload postfix`
 
@@ -1889,7 +1889,7 @@ Applies changes made in Postfix configs without interrupting mail delivery.
 ## Q85. Which file contains your default name servers?
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** mailq
 
@@ -1910,7 +1910,7 @@ Enter the command line to look up the NS record for the domain "happy.org" using
 the dig command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `postqueue -f`
 
@@ -1929,7 +1929,7 @@ Forces an immediate delivery attempt of all queued messages.
 teacher's DNS (172.16.30.167) using the nslookup command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `/etc/postfix/virtual`
 
@@ -1952,7 +1952,7 @@ All attributes of person are inherited by inetOrgPerson, including the required 
 All attributes of inetOrgPerson are inherited by person
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `postmap <file>`
 
@@ -1977,7 +1977,7 @@ ifconfig
 ipconfig
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `echo "Test" | mail -s "Subject" user@example.com`
 
@@ -1996,7 +1996,7 @@ Quick way to send an email through the system’s MTA for verification.
 professor's DNS (172.16.30.167) using the dig command (without -t).
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl status postfix`
 
@@ -2018,7 +2018,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `dnf install openldap-servers openldap-clients`
 
@@ -2042,7 +2042,7 @@ The user receiving the email
 None of these answers
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl start slapd`
 
@@ -2065,7 +2065,7 @@ There is only one type of object class
 Abstract
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `systemctl enable slapd`
 
@@ -2086,7 +2086,7 @@ Enter the command line to look up the MX record for the domain "happy.org" using
 the dig command.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `/etc/openldap/slapd.d/`
 
@@ -2109,7 +2109,7 @@ ip listen
 ss listen
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ldapadd -x -D "cn=Manager,dc=example,dc=com" -W -f file.ldif`
 
@@ -2127,7 +2127,7 @@ Uses simple authentication (-x) and the admin bind DN to insert directory entrie
 ## Q96. Which utility is used to add entries to LDAP from a properly configured LDIF file?
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ldapsearch -x -b "dc=example,dc=com" "(cn=John Doe)"`
 
@@ -2151,7 +2151,7 @@ ip show ens160
 ip ens160
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ldapmodify -x -D "cn=Manager,dc=example,dc=com" -W -f changes.ldif`
 
@@ -2169,7 +2169,7 @@ Applies attribute updates to existing directory entries.
 ## Q98. Which utility is used to search the LDAP DIT?
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `ldapdelete -x -D "cn=Manager,dc=example,dc=com" -W "cn=John Doe,dc=example,dc=com"`
 
@@ -2193,7 +2193,7 @@ lookup
 host
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `TCP/UDP port 389`
 
@@ -2212,7 +2212,7 @@ Default LDAP traffic runs over port 389; LDAPS (encrypted) uses port 636.
 A/
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `slapcat > backup.ldif`
 
@@ -2235,7 +2235,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `dnf install samba samba-client`
 
@@ -2263,7 +2263,7 @@ Port
 5. -0
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `/etc/samba/smb.conf`
 
@@ -2286,7 +2286,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** pgsql
 
@@ -2309,7 +2309,7 @@ FQDN
 DNS
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `smbpasswd -a username`
 
@@ -2332,7 +2332,7 @@ VirtualHost
 Host
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** testparm
 
@@ -2356,7 +2356,7 @@ configuration file has to be edited:
 /etc/services
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `TCP 139 & 445, UDP 137 & 138`
 
@@ -2377,7 +2377,7 @@ True
 False
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `dnf install nfs-utils`
 
@@ -2405,7 +2405,7 @@ It cannot be done: you cannot setup a site for another interface when setting up
 virtual hosting for a given interface.
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `/etc/exports`
 
@@ -2429,7 +2429,7 @@ ip
 All of these choices
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `exportfs -r`
 
@@ -2452,7 +2452,7 @@ DocType directive in the Apache configuration
 Content-Type header based on MIME types
 
 <details>
-<summary>Answer, Concept & Reference</summary>
+<summary>Show Answer & Explanation</summary>
 
 **Answer (MC style):** `mount server:/path/to/share /mnt/mountpoint`
 
