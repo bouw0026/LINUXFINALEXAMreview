@@ -1,1870 +1,447 @@
-## Q1. [Question text for Q1 goes here]
+# Linux System Administration Review Questions
 
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q1]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q1]
-
-**Reference:**  
-[Relevant course/lab reference for Q1]
-
-</details>
-
----
-
-## Q2. [Question text for Q2 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q2]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q2]
-
-**Reference:**  
-[Relevant course/lab reference for Q2]
-
-</details>
-
----
-
-## Q3. [Question text for Q3 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q3]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q3]
-
-**Reference:**  
-[Relevant course/lab reference for Q3]
-
-</details>
-
----
-
-## Q4. [Question text for Q4 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q4]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q4]
-
-**Reference:**  
-[Relevant course/lab reference for Q4]
-
-</details>
-
----
-
-## Q5. [Question text for Q5 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q5]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q5]
-
-**Reference:**  
-[Relevant course/lab reference for Q5]
-
-</details>
-
----
-
-## Q6. [Question text for Q6 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q6]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q6]
-
-**Reference:**  
-[Relevant course/lab reference for Q6]
-
-</details>
-
----
-
-## Q7. [Question text for Q7 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q7]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q7]
-
-**Reference:**  
-[Relevant course/lab reference for Q7]
-
-</details>
-
----
-
-## Q8. [Question text for Q8 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q8]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q8]
-
-**Reference:**  
-[Relevant course/lab reference for Q8]
-
-</details>
-
----
-
-## Q9. [Question text for Q9 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q9]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q9]
-
-**Reference:**  
-[Relevant course/lab reference for Q9]
-
-</details>
-
----
-
-## Q10. [Question text for Q10 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q10]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q10]
-
-**Reference:**  
-[Relevant course/lab reference for Q10]
-
-</details>
-
----
-
-## Q11. [Question text for Q11 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q11]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q11]
-
-**Reference:**  
-[Relevant course/lab reference for Q11]
-
-</details>
-
----
-
-## Q12. [Question text for Q12 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q12]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q12]
-
-**Reference:**  
-[Relevant course/lab reference for Q12]
-
-</details>
-
----
-
-## Q13. [Question text for Q13 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q13]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q13]
-
-**Reference:**  
-[Relevant course/lab reference for Q13]
-
-</details>
-
----
-
-## Q14. [Question text for Q14 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q14]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q14]
-
-**Reference:**  
-[Relevant course/lab reference for Q14]
-
-</details>
-
----
-
-## Q15. [Question text for Q15 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q15]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q15]
-
-**Reference:**  
-[Relevant course/lab reference for Q15]
-
-</details>
-
----
-
-## Q16. [Question text for Q16 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q16]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q16]
-
-**Reference:**  
-[Relevant course/lab reference for Q16]
-
-</details>
-
----
-
-## Q17. [Question text for Q17 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q17]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q17]
-
-**Reference:**  
-[Relevant course/lab reference for Q17]
-
-</details>
-
----
-
-## Q18. [Question text for Q18 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q18]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q18]
-
-**Reference:**  
-[Relevant course/lab reference for Q18]
-
-</details>
-
----
-
-## Q19. [Question text for Q19 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q19]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q19]
-
-**Reference:**  
-[Relevant course/lab reference for Q19]
-
-</details>
-
----
-
-## Q20. [Question text for Q20 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q20]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q20]
-
-**Reference:**  
-[Relevant course/lab reference for Q20]
-
-</details>
-
----
-
-## Q21. [Question text for Q21 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q21]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q21]
-
-**Reference:**  
-[Relevant course/lab reference for Q21]
-
-</details>
-
----
-
-## Q22. [Question text for Q22 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q22]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q22]
-
-**Reference:**  
-[Relevant course/lab reference for Q22]
-
-</details>
-
----
-
-## Q23. [Question text for Q23 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q23]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q23]
-
-**Reference:**  
-[Relevant course/lab reference for Q23]
-
-</details>
-
----
-
-## Q24. [Question text for Q24 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q24]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q24]
-
-**Reference:**  
-[Relevant course/lab reference for Q24]
-
-</details>
-
----
-
-## Q25. [Question text for Q25 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q25]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q25]
-
-**Reference:**  
-[Relevant course/lab reference for Q25]
-
-</details>
-
----
-
-## Q26. [Question text for Q26 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q26]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q26]
-
-**Reference:**  
-[Relevant course/lab reference for Q26]
-
-</details>
-
----
-
-## Q27. [Question text for Q27 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q27]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q27]
-
-**Reference:**  
-[Relevant course/lab reference for Q27]
-
-</details>
-
----
-
-## Q28. [Question text for Q28 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q28]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q28]
-
-**Reference:**  
-[Relevant course/lab reference for Q28]
-
-</details>
-
----
-
-## Q29. [Question text for Q29 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q29]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q29]
-
-**Reference:**  
-[Relevant course/lab reference for Q29]
-
-</details>
-
----
-
-## Q30. [Question text for Q30 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q30]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q30]
-
-**Reference:**  
-[Relevant course/lab reference for Q30]
-
-</details>
-
----
-
-## Q31. [Question text for Q31 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q31]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q31]
-
-**Reference:**  
-[Relevant course/lab reference for Q31]
-
-</details>
-
----
-
-## Q32. [Question text for Q32 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q32]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q32]
-
-**Reference:**  
-[Relevant course/lab reference for Q32]
-
-</details>
-
----
-
-## Q33. [Question text for Q33 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q33]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q33]
-
-**Reference:**  
-[Relevant course/lab reference for Q33]
-
-</details>
-
----
-
-## Q34. [Question text for Q34 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q34]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q34]
-
-**Reference:**  
-[Relevant course/lab reference for Q34]
-
-</details>
-
----
-
-## Q35. [Question text for Q35 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q35]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q35]
-
-**Reference:**  
-[Relevant course/lab reference for Q35]
-
-</details>
-
----
-
-## Q36. [Question text for Q36 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q36]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q36]
-
-**Reference:**  
-[Relevant course/lab reference for Q36]
-
-</details>
-
----
-
-## Q37. [Question text for Q37 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q37]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q37]
-
-**Reference:**  
-[Relevant course/lab reference for Q37]
-
-</details>
-
----
-
-## Q38. [Question text for Q38 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q38]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q38]
-
-**Reference:**  
-[Relevant course/lab reference for Q38]
-
-</details>
-
----
-
-## Q39. [Question text for Q39 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q39]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q39]
-
-**Reference:**  
-[Relevant course/lab reference for Q39]
-
-</details>
-
----
-
-## Q40. [Question text for Q40 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q40]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q40]
-
-**Reference:**  
-[Relevant course/lab reference for Q40]
-
-</details>
-
----
-
-## Q41. [Question text for Q41 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q41]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q41]
-
-**Reference:**  
-[Relevant course/lab reference for Q41]
-
-</details>
-
----
-
-## Q42. [Question text for Q42 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q42]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q42]
-
-**Reference:**  
-[Relevant course/lab reference for Q42]
-
-</details>
-
----
-
-## Q43. [Question text for Q43 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q43]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q43]
-
-**Reference:**  
-[Relevant course/lab reference for Q43]
-
-</details>
-
----
-
-## Q44. [Question text for Q44 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q44]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q44]
-
-**Reference:**  
-[Relevant course/lab reference for Q44]
-
-</details>
-
----
-
-## Q45. [Question text for Q45 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q45]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q45]
-
-**Reference:**  
-[Relevant course/lab reference for Q45]
-
-</details>
-
----
-
-## Q46. [Question text for Q46 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q46]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q46]
-
-**Reference:**  
-[Relevant course/lab reference for Q46]
-
-</details>
-
----
-
-## Q47. [Question text for Q47 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q47]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q47]
-
-**Reference:**  
-[Relevant course/lab reference for Q47]
-
-</details>
-
----
-
-## Q48. [Question text for Q48 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q48]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q48]
-
-**Reference:**  
-[Relevant course/lab reference for Q48]
-
-</details>
-
----
-
-## Q49. [Question text for Q49 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q49]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q49]
-
-**Reference:**  
-[Relevant course/lab reference for Q49]
-
-</details>
-
----
-
-## Q50. [Question text for Q50 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q50]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q50]
-
-**Reference:**  
-[Relevant course/lab reference for Q50]
-
-</details>
-
----
-
-## Q51. [Question text for Q51 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q51]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q51]
-
-**Reference:**  
-[Relevant course/lab reference for Q51]
-
-</details>
-
----
-
-## Q52. [Question text for Q52 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q52]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q52]
-
-**Reference:**  
-[Relevant course/lab reference for Q52]
-
-</details>
-
----
-
-## Q53. [Question text for Q53 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q53]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q53]
-
-**Reference:**  
-[Relevant course/lab reference for Q53]
-
-</details>
-
----
-
-## Q54. [Question text for Q54 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q54]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q54]
-
-**Reference:**  
-[Relevant course/lab reference for Q54]
-
-</details>
-
----
-
-## Q55. [Question text for Q55 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q55]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q55]
-
-**Reference:**  
-[Relevant course/lab reference for Q55]
-
-</details>
-
----
-
-## Q56. [Question text for Q56 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q56]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q56]
-
-**Reference:**  
-[Relevant course/lab reference for Q56]
-
-</details>
-
----
-
-## Q57. [Question text for Q57 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q57]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q57]
-
-**Reference:**  
-[Relevant course/lab reference for Q57]
-
-</details>
-
----
-
-## Q58. [Question text for Q58 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q58]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q58]
-
-**Reference:**  
-[Relevant course/lab reference for Q58]
-
-</details>
-
----
-
-## Q59. [Question text for Q59 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q59]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q59]
-
-**Reference:**  
-[Relevant course/lab reference for Q59]
-
-</details>
-
----
-
-## Q60. [Question text for Q60 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q60]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q60]
-
-**Reference:**  
-[Relevant course/lab reference for Q60]
-
-</details>
-
----
-
-## Q61. [Question text for Q61 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q61]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q61]
-
-**Reference:**  
-[Relevant course/lab reference for Q61]
-
-</details>
-
----
-
-## Q62. [Question text for Q62 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q62]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q62]
-
-**Reference:**  
-[Relevant course/lab reference for Q62]
-
-</details>
-
----
-
-## Q63. [Question text for Q63 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q63]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q63]
-
-**Reference:**  
-[Relevant course/lab reference for Q63]
-
-</details>
-
----
-
-## Q64. [Question text for Q64 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q64]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q64]
-
-**Reference:**  
-[Relevant course/lab reference for Q64]
-
-</details>
-
----
-
-## Q65. [Question text for Q65 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q65]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q65]
-
-**Reference:**  
-[Relevant course/lab reference for Q65]
-
-</details>
-
----
-
-## Q66. [Question text for Q66 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q66]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q66]
-
-**Reference:**  
-[Relevant course/lab reference for Q66]
-
-</details>
-
----
-
-## Q67. [Question text for Q67 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q67]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q67]
-
-**Reference:**  
-[Relevant course/lab reference for Q67]
-
-</details>
-
----
-
-## Q68. [Question text for Q68 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q68]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q68]
-
-**Reference:**  
-[Relevant course/lab reference for Q68]
-
-</details>
-
----
-
-## Q69. [Question text for Q69 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q69]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q69]
-
-**Reference:**  
-[Relevant course/lab reference for Q69]
+## Q1. If a directive in your Apache configuration is not recognized by Apache, the most likely reason is that the module that supports the directive is missing.
 
-</details>
-
----
-
-## Q70. [Question text for Q70 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q70]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q70]
-
-**Reference:**  
-[Relevant course/lab reference for Q70]
-
-</details>
-
----
-
-## Q71. [Question text for Q71 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q71]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q71]
-
-**Reference:**  
-[Relevant course/lab reference for Q71]
-
-</details>
-
----
-
-## Q72. [Question text for Q72 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q72]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q72]
-
-**Reference:**  
-[Relevant course/lab reference for Q72]
-
-</details>
+True  
+False
 
----
-
-## Q73. [Question text for Q73 goes here]
-
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q73]
+**Answer (MC style):** True
 
 **Concept / Why:**  
-[Reasoning and explanation for Q73]
+Apache's functionality is modular - many configuration directives are provided by loadable modules. If you use a directive that Apache doesn't recognize, it usually means the module for that directive isn't enabled or installed.
 
 **Reference:**  
-[Relevant course/lab reference for Q73]
-
+Lab #6 - Apache Configuration (enabling Apache modules)
 </details>
 
 ---
-
-## Q74. [Question text for Q74 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q74]
+## Q2. The apache server implements the following protocol:
 
-**Concept / Why:**  
-[Reasoning and explanation for Q74]
-
-**Reference:**  
-[Relevant course/lab reference for Q74]
-
-</details>
-
----
-
-## Q75. [Question text for Q75 goes here]
+HTTP  
+URI  
+APACHE  
+None of these choices
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q75]
+**Answer (MC style):** HTTP
 
 **Concept / Why:**  
-[Reasoning and explanation for Q75]
+Apache is a web server that serves content over the HTTP protocol (and HTTPS for secure connections). The other options are not network protocols.
 
 **Reference:**  
-[Relevant course/lab reference for Q75]
-
+Apache Web Server Lab/Notes
 </details>
 
 ---
-
-## Q76. [Question text for Q76 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q76]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q76]
 
-**Reference:**  
-[Relevant course/lab reference for Q76]
-
-</details>
-
----
+## Q3. Which key is used to encrypt in order to prove authenticity using public key cryptography?
 
-## Q77. [Question text for Q77 goes here]
+Private key  
+Public key  
+Foreign key  
+Shared key
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q77]
+**Answer (MC style):** Private key
 
 **Concept / Why:**  
-[Reasoning and explanation for Q77]
+To prove authenticity (as in digital signatures), the sender uses their private key to encrypt/sign the data. The recipient uses the corresponding public key to verify.
 
 **Reference:**  
-[Relevant course/lab reference for Q77]
-
+Encryption & SSH Notes
 </details>
 
 ---
-
-## Q78. [Question text for Q78 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q78]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q78]
-
-**Reference:**  
-[Relevant course/lab reference for Q78]
-
-</details>
 
----
+## Q4. Which apache configuration directive configures logging of all website accesses?
 
-## Q79. [Question text for Q79 goes here]
+TransferLog  
+Transfer  
+AccessLog  
+Access
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q79]
+**Answer (MC style):** TransferLog
 
 **Concept / Why:**  
-[Reasoning and explanation for Q79]
+The TransferLog directive specifies the file where all HTTP requests should be logged. CustomLog is also used in newer versions for flexible logging.
 
 **Reference:**  
-[Relevant course/lab reference for Q79]
-
+Apache Configuration Lab
 </details>
 
 ---
 
-## Q80. [Question text for Q80 goes here]
+## Q5. Enter the command line to look up the NS record for the domain "happy.org" using the nslookup command.
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q80]
+**Answer (MC style):** `nslookup -type=NS happy.org`
 
 **Concept / Why:**  
-[Reasoning and explanation for Q80]
+The `-type=NS` option queries for nameserver records. This command will return the authoritative nameservers for the domain.
 
 **Reference:**  
-[Relevant course/lab reference for Q80]
-
+DNS Protocol/Tools Notes
 </details>
 
 ---
 
-## Q81. [Question text for Q81 goes here]
+## Q6. Which file controls static hostname resolution?
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q81]
+**Answer (MC style):** `/etc/hosts`
 
 **Concept / Why:**  
-[Reasoning and explanation for Q81]
+The /etc/hosts file contains local hostname-to-IP mappings that the system checks before DNS queries.
 
 **Reference:**  
-[Relevant course/lab reference for Q81]
-
+Networking Week 1 Notes
 </details>
 
 ---
 
-## Q82. [Question text for Q82 goes here]
+## Q7. What is the command used to start service "foobar" upon system boot up?
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q82]
+**Answer (MC style):** `systemctl enable foobar`
 
 **Concept / Why:**  
-[Reasoning and explanation for Q82]
+`systemctl enable` configures a service to start automatically at boot, while `systemctl start` only starts it immediately.
 
 **Reference:**  
-[Relevant course/lab reference for Q82]
-
+Network Services & Management (Week 2)
 </details>
 
 ---
-
-## Q83. [Question text for Q83 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q83]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q83]
-
-**Reference:**  
-[Relevant course/lab reference for Q83]
-
-</details>
 
----
+## Q8. Generally, you should put an IPv4 entry and IPv6 entry for your localhost in your hosts file.
 
-## Q84. [Question text for Q84 goes here]
+True  
+False
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q84]
+**Answer (MC style):** True
 
 **Concept / Why:**  
-[Reasoning and explanation for Q84]
+Best practice includes both IPv4 (127.0.0.1) and IPv6 (::1) loopback addresses for localhost to ensure proper resolution.
 
 **Reference:**  
-[Relevant course/lab reference for Q84]
-
+Networking Basics
 </details>
 
 ---
 
-## Q85. [Question text for Q85 goes here]
+## Q9. Enter the command line to look up the PTR record for "172.16.30.167" using the dig command.
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q85]
+**Answer (MC style):** `dig -x 172.16.30.167`
 
 **Concept / Why:**  
-[Reasoning and explanation for Q85]
+The `-x` option in dig performs reverse DNS lookups (PTR record queries) for IP addresses.
 
 **Reference:**  
-[Relevant course/lab reference for Q85]
-
+DNS Lab #1
 </details>
 
 ---
 
-## Q86. [Question text for Q86 goes here]
+## Q10. Enter the command line to look up the PTR record for "172.16.31.167" on your slave DNS (172.16.31.167) using the dig command from another Linux machine.
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q86]
+**Answer (MC style):** `dig @172.16.31.167 -x 172.16.31.167`
 
 **Concept / Why:**  
-[Reasoning and explanation for Q86]
+The `@` specifies which DNS server to query, and `-x` performs the reverse lookup for the PTR record.
 
 **Reference:**  
-[Relevant course/lab reference for Q86]
-
+DNS Lab #1
 </details>
 
 ---
-
-## Q87. [Question text for Q87 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q87]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q87]
-
-**Reference:**  
-[Relevant course/lab reference for Q87]
-
-</details>
 
----
+## Q11. What is the default document root for apache?
 
-## Q88. [Question text for Q88 goes here]
+/var/www  
+/var/www/html  
+/etc/httpd/www  
+/var  
+/etc/httpd/www/html  
+/etc/httpd/html  
+/etc/httpd
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q88]
+**Answer (MC style):** /var/www/html
 
 **Concept / Why:**  
-[Reasoning and explanation for Q88]
+This is the standard location where Apache serves website content by default in most Linux distributions.
 
 **Reference:**  
-[Relevant course/lab reference for Q88]
-
+Apache Configuration Lab
 </details>
 
 ---
-
-## Q89. [Question text for Q89 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q89]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q89]
-
-**Reference:**  
-[Relevant course/lab reference for Q89]
 
-</details>
+# Linux System Administration Review Questions (11-20)
 
----
+## Q11. What is the default document root for apache?
 
-## Q90. [Question text for Q90 goes here]
+/var/www  
+/var/www/html  
+/etc/httpd/www  
+/var  
+/etc/httpd/www/html  
+/etc/httpd/html  
+/etc/httpd
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q90]
+**Answer (MC style):** /var/www/html
 
 **Concept / Why:**  
-[Reasoning and explanation for Q90]
+This is the standard location where Apache serves website content by default in most Linux distributions.
 
 **Reference:**  
-[Relevant course/lab reference for Q90]
-
+Apache Configuration Lab
 </details>
 
 ---
-
-## Q91. [Question text for Q91 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q91]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q91]
-
-**Reference:**  
-[Relevant course/lab reference for Q91]
-
-</details>
 
----
+## Q12. Match the commands with the description.
 
-## Q92. [Question text for Q92 goes here]
+1. systemctl list-units  
+2. systemctl list-unit-files  
+3. systemctl start service  
+4. systemctl get-default  
+5. journalctl -u network  
+6. journalctl -k  
+7. systemctl list-units -t service  
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q92]
+**Answer (MC style):**  
+1. Displays all active units  
+2. Displays all units  
+3. Start service immediately  
+4. Display the default target  
+5. Display log messages for the network service  
+6. Display kernel messages  
+7. Lists all running services  
 
 **Concept / Why:**  
-[Reasoning and explanation for Q92]
+These systemctl commands are essential for service management in systemd-based systems.
 
 **Reference:**  
-[Relevant course/lab reference for Q92]
-
+Systemd Service Management Lab
 </details>
 
 ---
-
-## Q93. [Question text for Q93 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q93]
 
-**Concept / Why:**  
-[Reasoning and explanation for Q93]
-
-**Reference:**  
-[Relevant course/lab reference for Q93]
-
-</details>
-
----
+## Q13. Virtual hosts in Apache are used to:
 
-## Q94. [Question text for Q94 goes here]
+Create multiple copies of the same web site on multiple server systems  
+Host web sites without the need to setup DNS entries for multiple domain names  
+Setup referrals to other web servers  
+Have web sites for multiple sites on the same server system  
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q94]
+**Answer (MC style):** Have web sites for multiple sites on the same server system
 
 **Concept / Why:**  
-[Reasoning and explanation for Q94]
+Virtual hosts allow hosting multiple websites with different domain names on a single server by using the same IP address.
 
 **Reference:**  
-[Relevant course/lab reference for Q94]
-
+Apache Virtual Hosts Configuration
 </details>
 
 ---
-
-## Q95. [Question text for Q95 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q95]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q95]
-
-**Reference:**  
-[Relevant course/lab reference for Q95]
-
-</details>
 
----
+## Q14. Which file must be modified on the master DNS to allow master/slave operation for the package bind?
 
-## Q96. [Question text for Q96 goes here]
+/etc/bind.conf  
+/etc/sysconfig/bind.conf  
+/etc/named.conf  
+/etc/sysconfig/named.conf
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q96]
+**Answer (MC style):** /etc/named.conf
 
 **Concept / Why:**  
-[Reasoning and explanation for Q96]
+The named.conf file is the main configuration file for BIND DNS server where zone transfers are configured.
 
 **Reference:**  
-[Relevant course/lab reference for Q96]
-
+DNS Server Configuration Lab
 </details>
 
 ---
-
-## Q97. [Question text for Q97 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q97]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q97]
-
-**Reference:**  
-[Relevant course/lab reference for Q97]
-
-</details>
 
----
+## Q15. The aliasing feature is used to forward email of a local user to a different email account. The /etc/aliases file is consulted by which mail server?
 
-## Q98. [Question text for Q98 goes here]
+inbound  
+outbound
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q98]
+**Answer (MC style):** inbound
 
 **Concept / Why:**  
-[Reasoning and explanation for Q98]
+The /etc/aliases file is used by the inbound mail server (MTA) to redirect incoming mail to different local recipients.
 
 **Reference:**  
-[Relevant course/lab reference for Q98]
-
+Postfix Mail Server Configuration
 </details>
 
 ---
-
-## Q99. [Question text for Q99 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q99]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q99]
-
-**Reference:**  
-[Relevant course/lab reference for Q99]
-
-</details>
 
----
+## Q16. What does the error message "mail loops back to me" typically indicate is wrong in the postfix configuration file?
 
-## Q100. [Question text for Q100 goes here]
+The MX record is incorrect (missing or pointing to an incorrect host  
+Postfix is listening only on the loopback interface  
+Postfix is listening only on port 25  
+"relay_domains" is incorrectly set  
+"mydestination" is incorrectly configured
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q100]
+**Answer (MC style):** "mydestination" is incorrectly configured
 
 **Concept / Why:**  
-[Reasoning and explanation for Q100]
+This error occurs when Postfix thinks it's the final destination for a domain but isn't properly configured to handle it.
 
 **Reference:**  
-[Relevant course/lab reference for Q100]
-
+Postfix Troubleshooting Guide
 </details>
 
 ---
-
-## Q101. [Question text for Q101 goes here]
 
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q101]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q101]
-
-**Reference:**  
-[Relevant course/lab reference for Q101]
-
-</details>
-
----
+## Q17. Name-based virtual hosting is possible because:
 
-## Q102. [Question text for Q102 goes here]
+The client connection to the server is based on hostname and port number.  
+The client connection to the server is based on IP address and port number, and the hostname is included in the client request.
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q102]
+**Answer (MC style):** The client connection to the server is based on IP address and port number, and the hostname is included in the client request.
 
 **Concept / Why:**  
-[Reasoning and explanation for Q102]
+The Host header in HTTP requests allows the server to identify which website to serve from a shared IP address.
 
 **Reference:**  
-[Relevant course/lab reference for Q102]
-
+Apache Virtual Hosts Documentation
 </details>
 
 ---
-
-## Q103. [Question text for Q103 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q103]
+## Q18. Which command displays interface configuration for all interfaces?
 
-**Concept / Why:**  
-[Reasoning and explanation for Q103]
-
-**Reference:**  
-[Relevant course/lab reference for Q103]
-
-</details>
-
----
-
-## Q104. [Question text for Q104 goes here]
+ip addr show ens33  
+ip addr ens33  
+addr  
+ip show ens33  
+ip ens33
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q104]
+**Answer (MC style):** ip addr show
 
 **Concept / Why:**  
-[Reasoning and explanation for Q104]
+The `ip addr show` command without specifying an interface displays configuration for all network interfaces.
 
 **Reference:**  
-[Relevant course/lab reference for Q104]
-
+Network Configuration Lab #1
 </details>
 
 ---
-
-## Q105. [Question text for Q105 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q105]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q105]
 
-**Reference:**  
-[Relevant course/lab reference for Q105]
-
-</details>
-
----
+## Q19. Which command(s) verify bind(DNS) is listening on the configured port(s)?
 
-## Q106. [Question text for Q106 goes here]
+netstat -lptn  
+ss -lptn  
+ip listen  
+ss listen
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q106]
+**Answer (MC style):** ss -lptn
 
 **Concept / Why:**  
-[Reasoning and explanation for Q106]
+The `ss` command shows socket statistics, and the options filter for listening (-l), processes (-p), TCP (-t), and numeric (-n) output.
 
 **Reference:**  
-[Relevant course/lab reference for Q106]
-
+DNS Server Verification
 </details>
 
 ---
-
-## Q107. [Question text for Q107 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q107]
-
-**Concept / Why:**  
-[Reasoning and explanation for Q107]
-
-**Reference:**  
-[Relevant course/lab reference for Q107]
-
-</details>
 
----
+## Q20. The only source for web documents that a server can map a URL to is given by the DocumentRoot directive.
 
-## Q108. [Question text for Q108 goes here]
+True  
+False
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q108]
+**Answer (MC style):** False
 
 **Concept / Why:**  
-[Reasoning and explanation for Q108]
+Apache can serve documents from locations outside DocumentRoot using Alias or other directives.
 
 **Reference:**  
-[Relevant course/lab reference for Q108]
-
+Apache URL Mapping Documentation
 </details>
 
 ---
-
-## Q109. [Question text for Q109 goes here]
-
-<details>
-<summary>Answer, Concept & Reference</summary>
-
-**Answer (MC style):** [Answer text for Q109]
 
-**Concept / Why:**  
-[Reasoning and explanation for Q109]
-
-**Reference:**  
-[Relevant course/lab reference for Q109]
 
-</details>
 
----
+## Q110. When data is downloaded from a web server to a client browser, the type of data (text, image, audio, etc.) is determined by the:
 
-## Q110. [Question text for Q110 goes here]
+File extension of the downloaded document  
+DocType directive in the Apache configuration  
+Content-Type header based on MIME types
 
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** [Answer text for Q110]
+**Answer (MC style):** Content-Type header based on MIME types
 
 **Concept / Why:**  
-[Reasoning and explanation for Q110]
+The Content-Type HTTP header specifies the media type of the resource, which determines how browsers should interpret the content.
 
 **Reference:**  
-[Relevant course/lab reference for Q110]
-
+HTTP Protocol and Apache Configuration
 </details>
-
----
-
