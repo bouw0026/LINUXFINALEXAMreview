@@ -1,1400 +1,1719 @@
-# LINUXREADME — Sectioned Edition
-
-Organized into ranges for easier navigation.
-
-## Sections
-
-- [Q1–Q20](#q1-q20)
-- [Q21–Q40](#q21-q40)
-- [Q41–Q60](#q41-q60)
-- [Q61–Q80](#q61-q80)
-- [Q81–Q100](#q81-q100)
-- [Q101–Q110](#q101-q110)
+# Linux System Administration Review Questions
 
 
----
-
-## Q1–Q20
-<a id="q1-q20"></a>
-
-### Q1
-<a id="q1"></a>
-
-**Question:** If a directive in your Apache configuration is not recognized by Apache, the most
+## Q1. If a directive in your Apache configuration is not recognized by Apache, the most
 likely reason is that the module that supports the directive is missing.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** True.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Apache’s functionality is modular – many configuration directives are provided by loadable modules. If you use a directive that Apache doesn’t recognize, it usually means the module for that directive isn’t enabled or installed. For example, SSL-related directives won’t work unless the SSL module (mod_ssl) is loaded. Ensuring the appropriate module is loaded (via LoadModule or installing the module) will resolve the unrecognized directive issue.
-
----
+**Answer (MC style):** True.
 
 
-### Q2
-<a id="q2"></a>
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: Apache’s functionality is modular – many configuration directives are provided by loadable modules. If you use a directive that Apache doesn’t recognize, it usually means the module for that directive isn’t enabled or installed. For example, SSL-related directives won’t work unless the SSL module (mod_ssl) is loaded. Ensuring the appropriate module is loaded (via LoadModule or installing the module) will resolve the unrecognized directive issue.
 
-**Question:** Question 2
-
-**Choices:**
-- The apache server implements the following protocol:
-- HTTP
-- URI
-- APACHE
-- None of these choices
-
-**Answer:** `HTTP (HyperText Transfer Protocol).`
-
-**Why / Concept:** Apache is a web server that serves content over the HTTP protocol (and by extension HTTPS for secure HTTP). It listens on the standard HTTP port (80) to handle web requests. In other words, Apache’s primary role is to implement the HTTP protocol, delivering web pages to clients (web browsers). The other options (URI, “APACHE”) are not network protocols – HTTP is the correct one.
+</details>
 
 ---
 
 
-### Q3
-<a id="q3"></a>
+## Q2. The apache server implements the following protocol:
 
-**Question:** cryptography?
+HTTP
+URI
+APACHE
+None of these choices
 
-**Choices:**
-- Which key is used to encrypt in order to prove authenticity using public key
-- Private key
-- Public key
-- Foreign key
-- Shared key
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `The private key.`
-
-**Why / Concept:** To prove authenticity (as in digital signatures), the sender uses their private key to encrypt/sign the data. Since only the legitimate holder possesses the private key, this act proves the data’s origin. The recipient uses the corresponding public key to decrypt/verify the signature. This public-key cryptography scheme ensures that the message integrity and origin (authenticity) are verifiable. In contrast, encrypting with a public key provides confidentiality (anyone can encrypt to send to the private key holder, but that doesn’t prove identity). Thus, the private key is used for authenticity proofs.
-
----
+**Answer (MC style):** `HTTP (HyperText Transfer Protocol).`
 
 
-### Q4
-<a id="q4"></a>
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: Apache is a web server that serves content over the HTTP protocol (and by extension HTTPS for secure HTTP). It listens on the standard HTTP port (80) to handle web requests. In other words, Apache’s primary role is to implement the HTTP protocol, delivering web pages to clients (web browsers). The other options (URI, “APACHE”) are not network protocols – HTTP is the correct one.
 
-**Question:** Which apache configuration directive configures logging of all website accesses?
-
-**Choices:**
-- TransferLog
-- Transfer
-- AccessLog
-- Access
-
-**Answer:** TransferLog.
-
-**Why / Concept:** Apache records all HTTP requests (accesses) in its access log. The classic directive for this is TransferLog, which specifies the file where all requests should be logged. (In newer Apache versions, the CustomLog directive is used for flexible logging, but functionally it serves the same purpose of logging accesses.) For example, an Apache virtual host might use CustomLog /path/to/access.log combined to log all accesses in combined format. Among the given choices, TransferLog is the correct directive that enables logging of all website hits. The options “AccessLog” or “Access” are not actual Apache directives.
+</details>
 
 ---
 
 
-### Q5
-<a id="q5"></a>
+## Q3. Which key is used to encrypt in order to prove authenticity using public key
+cryptography?
 
-**Question:** Question 5
+Private key
+Public key
+Foreign key
+Shared key
 
-**Choices:**
-- Enter the command line to look up the NS record for the domain "happy.org" using
-- the nslookup command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `nslookup -type=NS happy.org`
-
-**Why / Concept:** The nslookup utility can query specific DNS record types by using the -type=NS option (or -q=NS). In this case, we specify the domain (happy.org) and request NS records, which will return the nameservers authoritative for happy.org. For example, the command above will list the DNS servers (NS records) for the happy.org domain. (Note: While modern Linux administration often prefers dig or host, nslookup is still usable for DNS queries.)
-
----
+**Answer (MC style):** `The private key.`
 
 
-### Q6
-<a id="q6"></a>
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: To prove authenticity (as in digital signatures), the sender uses their private key to encrypt/sign the data. Since only the legitimate holder possesses the private key, this act proves the data’s origin. The recipient uses the corresponding public key to decrypt/verify the signature. This public-key cryptography scheme ensures that the message integrity and origin (authenticity) are verifiable. In contrast, encrypting with a public key provides confidentiality (anyone can encrypt to send to the private key holder, but that doesn’t prove identity). Thus, the private key is used for authenticity proofs.
 
-**Question:** Which file controls static hostname resolution?
-
-**Answer:** `The /etc/hosts file.`
-
-**Why / Concept:** /etc/hosts is the local file for static hostname resolution on a Linux system. This file contains mappings of hostnames to IP addresses that the system checks before consulting any DNS server. For example, it usually includes an entry for localhost (mapping to 127.0.0.1) and any other static name-to-IP mappings needed. In summary, /etc/hosts allows the system to resolve hostnames without querying DNS, according to the static entries you place there.
+</details>
 
 ---
 
 
-### Q7
-<a id="q7"></a>
+## Q4. Which apache configuration directive configures logging of all website accesses?
 
-**Question:** What is the command used to start service "foobar" upon system boot up?
+TransferLog
+Transfer
+AccessLog
+Access
 
-**Answer:** `systemctl enable foobar`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** To configure a service to start at boot (in a systemd-based Linux like RHEL 8), you use systemctl enable <service>. This command creates the necessary links so that the service (here “foobar”) will automatically start on system startup. (This is distinct from systemctl start, which starts the service immediately but doesn’t enable auto-start.) By enabling a service, you ensure it launches on every boot without manual intervention. For example, systemctl enable foobar will mark the “foobar” service to load on boot.
+**Answer (MC style):** TransferLog.
+
+
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: Apache records all HTTP requests (accesses) in its access log. The classic directive for this is TransferLog, which specifies the file where all requests should be logged. (In newer Apache versions, the CustomLog directive is used for flexible logging, but functionally it serves the same purpose of logging accesses.) For example, an Apache virtual host might use CustomLog /path/to/access.log combined to log all accesses in combined format. Among the given choices, TransferLog is the correct directive that enables logging of all website hits. The options “AccessLog” or “Access” are not actual Apache directives.
+
+</details>
 
 ---
 
 
-### Q8
-<a id="q8"></a>
+## Q5. 
 
-**Question:** Generally, you should put an IPv4 entry and IPv6 entry for your localhost in you
+Enter the command line to look up the NS record for the domain "happy.org" using
+the nslookup command.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `nslookup -type=NS happy.org`
+
+
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: The nslookup utility can query specific DNS record types by using the -type=NS option (or -q=NS). In this case, we specify the domain (happy.org) and request NS records, which will return the nameservers authoritative for happy.org. For example, the command above will list the DNS servers (NS records) for the happy.org domain. (Note: While modern Linux administration often prefers dig or host, nslookup is still usable for DNS queries.)
+
+</details>
+
+---
+
+
+## Q6. Which file controls static hostname resolution?
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `The /etc/hosts file.`
+
+
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: /etc/hosts is the local file for static hostname resolution on a Linux system. This file contains mappings of hostnames to IP addresses that the system checks before consulting any DNS server. For example, it usually includes an entry for localhost (mapping to 127.0.0.1) and any other static name-to-IP mappings needed. In summary, /etc/hosts allows the system to resolve hostnames without querying DNS, according to the static entries you place there.
+
+</details>
+
+---
+
+
+## Q7. What is the command used to start service "foobar" upon system boot up?
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `systemctl enable foobar`
+
+
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: To configure a service to start at boot (in a systemd-based Linux like RHEL 8), you use systemctl enable <service>. This command creates the necessary links so that the service (here “foobar”) will automatically start on system startup. (This is distinct from systemctl start, which starts the service immediately but doesn’t enable auto-start.) By enabling a service, you ensure it launches on every boot without manual intervention. For example, systemctl enable foobar will mark the “foobar” service to load on boot.
+
+</details>
+
+---
+
+
+## Q8. Generally, you should put an IPv4 entry and IPv6 entry for your localhost in you
 hosts file.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** True.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** It is best practice to have both the IPv4 and IPv6 loopback addresses defined for “localhost” in /etc/hosts. Typically, you will have an entry 127.0.0.1 localhost (IPv4 loopback) and an entry ::1 localhost (IPv6 loopback) in the hosts file. Including both ensures that the hostname “localhost” resolves properly on systems using either IPv4 or IPv6. Most modern Linux distributions include both by default, which helps avoid issues with programs that may use IPv6 by default. In short, True – you should list both 127.0.0.1 and ::1 for localhost in your hosts file.
-
----
+**Answer (MC style):** True.
 
 
-### Q9
-<a id="q9"></a>
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: It is best practice to have both the IPv4 and IPv6 loopback addresses defined for “localhost” in /etc/hosts. Typically, you will have an entry 127.0.0.1 localhost (IPv4 loopback) and an entry ::1 localhost (IPv6 loopback) in the hosts file. Including both ensures that the hostname “localhost” resolves properly on systems using either IPv4 or IPv6. Most modern Linux distributions include both by default, which helps avoid issues with programs that may use IPv6 by default. In short, True – you should list both 127.0.0.1 and ::1 for localhost in your hosts file.
 
-**Question:** Question 9
-
-**Choices:**
-- Enter the command line to look up the PTR record for "172.16.30.167" using the dig
-- command.
-
-**Answer:** `dig -x 172.16.30.167`
-
-**Why / Concept:** The dig command’s -x option performs a reverse DNS lookup (i.e. queries for a PTR record). So, dig -x 172.16.30.167 will ask DNS for the PTR record corresponding to the IP 172.16.30.167. The PTR record (if configured) will reveal the hostname associated with that IP address. This is a standard way to verify reverse DNS mapping. According to the course notes, using dig -x is the proper method for reverse lookups. (If the DNS is set up with a reverse zone for 172.16.30.x, this query should return a hostname.)
+</details>
 
 ---
 
 
-### Q10
-<a id="q10"></a>
+## Q9. Enter the command line to look up the PTR record for "172.16.30.167" using the dig
+command.
 
-**Question:** Question 10
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Choices:**
-- Enter the command line to look up the PTR record for "172.16.31.167" on your slave
-- DNS (172.16.31.167) using the dig command from another Linux machine.
+**Answer (MC style):** `dig -x 172.16.30.167`
 
-**Answer:** `dig @172.16.31.167 -x 172.16.31.167`
 
-**Why / Concept:** Here we want to query the slave DNS server at 172.16.31.167 for the PTR record of the IP 172.16.31.167. In dig, you can specify the DNS server to ask by using @<server-ip>. So the command is:
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: The dig command’s -x option performs a reverse DNS lookup (i.e. queries for a PTR record). So, dig -x 172.16.30.167 will ask DNS for the PTR record corresponding to the IP 172.16.30.167. The PTR record (if configured) will reveal the hostname associated with that IP address. This is a standard way to verify reverse DNS mapping. According to the course notes, using dig -x is the proper method for reverse lookups. (If the DNS is set up with a reverse zone for 172.16.30.x, this query should return a hostname.)
+
+</details>
+
+---
+
+
+## Q10. Enter the command line to look up the PTR record for "172.16.31.167" on your slave
+DNS (172.16.31.167) using the dig command from another Linux machine.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `dig @172.16.31.167 -x 172.16.31.167`
+
+
+**Concept / Why:**  
+& Reference</summary> 
+Explanation: Here we want to query the slave DNS server at 172.16.31.167 for the PTR record of the IP 172.16.31.167. In dig, you can specify the DNS server to ask by using @<server-ip>. So the command is:
 dig @172.16.31.167 -x 172.16.31.167.
 Breaking it down: -x 172.16.31.167 asks for the PTR record of 172.16.31.167 (reverse lookup), and @172.16.31.167 directs the query to the DNS server at that address (which is the slave). This ensures we are checking the slave DNS directly. The lab instructions explicitly demonstrate using dig -x for reverse lookups and using the @ syntax to query a specific nameserver, which is exactly what we combine in this command.
 
----
-
-
-### Q11
-<a id="q11"></a>
-
-**Question:** What is the default document root for apache?
-
-**Choices:**
-- /var/www
-- /var/www/html
-- /etc/httpd/www
-- /var
-- /etc/httpd/www/html
-- /etc/httpd/html
-- /etc/httpd
-
-**Answer:** who
-
-**Why / Concept:** who displays the list of users currently logged into the system, along with terminal info and login time. It doesn’t show historical logins (that’s last).
+</details>
 
 ---
 
 
-### Q12
-<a id="q12"></a>
+## Q11. What is the default document root for apache?
 
-**Question:** Question 12
+/var/www
+/var/www/html
+/etc/httpd/www
+/var
+/etc/httpd/www/html
+/etc/httpd/html
+/etc/httpd
 
-**Choices:**
-- Match the commands with the description.
-- 1. systemctl list-units						displays all active units
-- 2. systemctl list-unit-files				displays all units
-- 3. systemctl start service					start service immediately
-- 4. systemctl get-default					display the default target
-- 5. journalctl -u network					display log messages for the network service
-- 6. journalctl -k							display kernel messages
-- 7. systemctl list-units -t service			lists all running services
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** whoami
-
-**Why / Concept:** whoami outputs the effective user name associated with the current session, useful for confirming identity after privilege escalation.
-
----
+**Answer (MC style):** who
 
 
-### Q13
-<a id="q13"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+who displays the list of users currently logged into the system, along with terminal info and login time. It doesn’t show historical logins (that’s last).
 
-**Question:** Question 13
-
-**Choices:**
-- Virtual hosts in Apache are used to:
-- Create multiple copies of the same web site on multiple server systems
-- Host web sites without the need to setup DNS entries for multiple domain names
-- Setup referrals to other web servers
-- Have web sites for multiple sites on the same server system
-
-**Answer:** `ls -a`
-
-**Why / Concept:** The -a flag includes all entries, even those starting with a dot (.), which are hidden by default.
+</details>
 
 ---
 
 
-### Q14
-<a id="q14"></a>
+## Q12. Match the commands with the description.
+1. systemctl list-units						displays all active units
+2. systemctl list-unit-files				displays all units
+3. systemctl start service					start service immediately
+4. systemctl get-default					display the default target
+5. journalctl -u network					display log messages for the network service
+6. journalctl -k							display kernel messages
+7. systemctl list-units -t service			lists all running services
 
-**Question:** the package bind?
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Choices:**
-- Which file must be modified on the master DNS to allow master/slave operation for
-- /etc/bind.conf
-- /etc/sysconfig/bind.conf
-- /etc/named.conf
-- /etc/sysconfig/named.conf
-
-**Answer:** pwd
-
-**Why / Concept:** pwd prints the absolute pathname of the current working directory, based on the shell’s environment.
-
----
+**Answer (MC style):** whoami
 
 
-### Q15
-<a id="q15"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+whoami outputs the effective user name associated with the current session, useful for confirming identity after privilege escalation.
 
-**Question:** account. The /etc/aliases file is consulted by which mail server?
-
-**Choices:**
-- The aliasing feature is used to forward email of a local user to a different email
-- inbound
-- outbound
-
-**Answer:** `Moves up one directory level.`
-
-**Why / Concept:** .. is a relative pathname for the parent directory. cd .. changes the working directory to it.
+</details>
 
 ---
 
 
-### Q16
-<a id="q16"></a>
+## Q13. Virtual hosts in Apache are used to:
 
-**Question:** the postfix configuration file?
+Create multiple copies of the same web site on multiple server systems
+Host web sites without the need to setup DNS entries for multiple domain names
+Setup referrals to other web servers
+Have web sites for multiple sites on the same server system
 
-**Choices:**
-- What does the error message "mail loops back to me" typically indicate is wrong in
-- The MX record is incorrect (missing or pointing to an incorrect host
-- Postfix is listening only on the loopback interface
-- Postfix is listening only on port 25
-- "relay_domains" is incorrectly set
-- "mydestination" is incorrectly configured
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `Detailed list including permissions, owner, group, size, and timestamps.`
-
-**Why / Concept:** -l triggers the “long” listing format, useful for file permissions and metadata inspection.
-
----
+**Answer (MC style):** `ls -a`
 
 
-### Q17
-<a id="q17"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+The -a flag includes all entries, even those starting with a dot (.), which are hidden by default.
 
-**Question:** Question 17
-
-**Choices:**
-- Name-based virtual hosting is possible because:
-- The client connection to the server is based on hostname and port number.
-- The client connection to the server is based on IP address and port number, and the hostname is included in the client request.
-
-**Answer:** `Creates an empty file or updates its timestamp.`
-
-**Why / Concept:** touch creates the file if it doesn’t exist; if it exists, it updates the access and modification times.
+</details>
 
 ---
 
 
-### Q18
-<a id="q18"></a>
+## Q14. Which file must be modified on the master DNS to allow master/slave operation for
+the package bind?
 
-**Question:** Which command displays interface configuration for all interfaces?
+/etc/bind.conf
+/etc/sysconfig/bind.conf
+/etc/named.conf
+/etc/sysconfig/named.conf
 
-**Choices:**
-- ip addr show ens33
-- ip addr ens33
-- addr
-- ip show ens33
-- ip ens33
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** rm
-
-**Why / Concept:** rm deletes files (and with -r, directories). It does not move them to trash—deletion is permanent.
-
----
+**Answer (MC style):** pwd
 
 
-### Q19
-<a id="q19"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+pwd prints the absolute pathname of the current working directory, based on the shell’s environment.
 
-**Question:** Which command(s) verify bind(DNS) is listening of the configured port(s)?
-
-**Choices:**
-- netstat -lptn
-- ss -lptn
-- ip listen
-- ss listen
-
-**Answer:** mkdir
-
-**Why / Concept:** mkdir creates directories at the specified path. Use -p to create parent directories as needed.
+</details>
 
 ---
 
 
-### Q20
-<a id="q20"></a>
+## Q15. The aliasing feature is used to forward email of a local user to a different email
+account. The /etc/aliases file is consulted by which mail server?
 
-**Question:** The only source for web documents that a server can map a URL to is given by the
+inbound
+outbound
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `Moves up one directory level.`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+.. is a relative pathname for the parent directory. cd .. changes the working directory to it.
+
+</details>
+
+---
+
+
+## Q16. What does the error message "mail loops back to me" typically indicate is wrong in
+the postfix configuration file?
+
+The MX record is incorrect (missing or pointing to an incorrect host
+Postfix is listening only on the loopback interface
+Postfix is listening only on port 25
+"relay_domains" is incorrectly set
+"mydestination" is incorrectly configured
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `Detailed list including permissions, owner, group, size, and timestamps.`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+-l triggers the “long” listing format, useful for file permissions and metadata inspection.
+
+</details>
+
+---
+
+
+## Q17. Name-based virtual hosting is possible because:
+The client connection to the server is based on hostname and port number.
+The client connection to the server is based on IP address and port number, and the hostname is included in the client request.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `Creates an empty file or updates its timestamp.`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+touch creates the file if it doesn’t exist; if it exists, it updates the access and modification times.
+
+</details>
+
+---
+
+
+## Q18. Which command displays interface configuration for all interfaces?
+
+ip addr show ens33
+ip addr ens33
+addr
+ip show ens33
+ip ens33
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** rm
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+rm deletes files (and with -r, directories). It does not move them to trash—deletion is permanent.
+
+</details>
+
+---
+
+
+## Q19. Which command(s) verify bind(DNS) is listening of the configured port(s)?
+
+netstat -lptn
+ss -lptn
+ip listen
+ss listen
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** mkdir
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+mkdir creates directories at the specified path. Use -p to create parent directories as needed.
+
+</details>
+
+---
+
+
+## Q20. The only source for web documents that a server can map a URL to is given by the
 DocumentRoot directive.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** cp
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** cp copies files from source to destination. With -r, it can copy directories recursively.
-
----
+**Answer (MC style):** cp
 
 
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+cp copies files from source to destination. With -r, it can copy directories recursively.
 
----
-
-## Q21–Q40
-<a id="q21-q40"></a>
-
-### Q21
-<a id="q21"></a>
-
-**Question:** Question 21
-
-**Choices:**
-- Enter the command line to look up the PTR record for "172.16.31.167" on the
-- teacher's slave DNS (172.16.31.167) using the nslookup command.
-
-**Answer:** mv
-
-**Why / Concept:** mv moves a file from one location to another or renames it if the source and destination are on the same filesystem.
+</details>
 
 ---
 
 
-### Q22
-<a id="q22"></a>
+## Q21. 
 
-**Question:** Question 22
+Enter the command line to look up the PTR record for "172.16.31.167" on the
+teacher's slave DNS (172.16.31.167) using the nslookup command.
 
-**Choices:**
-- Enter the command line to look up the NS record for the domain "happy.org" using
-- the host command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** cat
-
-**Why / Concept:** cat reads and outputs the contents of one or more files to standard output, often used for quick viewing.
-
----
+**Answer (MC style):** mv
 
 
-### Q23
-<a id="q23"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+mv moves a file from one location to another or renames it if the source and destination are on the same filesystem.
 
-**Question:** allowed to add/modify/delete entries in the LDAP database?
-
-**Choices:**
-- Assuming you do not configure the configuration file to allow other users, who is
-- user8213
-- root
-- Without further configuration, all users can add/modify/delete entries
-- Idapadm
-- The LDAP adminstrator
-
-**Answer:** head
-
-**Why / Concept:** head displays the first 10 lines of a file by default. The number of lines can be changed with the -n option.
+</details>
 
 ---
 
 
-### Q24
-<a id="q24"></a>
+## Q22. 
 
-**Question:** Which file contains the main configuration file for apache?
+Enter the command line to look up the NS record for the domain "happy.org" using
+the host command.
 
-**Choices:**
-- /etc/httpd/conf/http.conf
-- /etc/http/conf/http.conf
-- /etc/httpd/conf/httpd.conf
-- /etc/http/conf/httpd.conf
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** tail
-
-**Why / Concept:** tail displays the last 10 lines by default and is often used with -f to follow file updates (like logs).
-
----
+**Answer (MC style):** cat
 
 
-### Q25
-<a id="q25"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+cat reads and outputs the contents of one or more files to standard output, often used for quick viewing.
 
-**Question:** Which mail servers "need" to look up a public DNS MX record?
-
-**Choices:**
-- None of these answers
-- The user sending the email
-- The receiving email server
-- The user receiving the email
-- The sending email server
-
-**Answer:** grep
-
-**Why / Concept:** grep searches for patterns within files using regular expressions, printing matching lines.
+</details>
 
 ---
 
 
-### Q26
-<a id="q26"></a>
+## Q23. Assuming you do not configure the configuration file to allow other users, who is
+allowed to add/modify/delete entries in the LDAP database?
 
-**Question:** An attribute is defined by a set of object classes.
+user8213
+root
+Without further configuration, all users can add/modify/delete entries
+Idapadm
+The LDAP adminstrator
 
-**Choices:**
-- True
-- False
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** chmod
-
-**Why / Concept:** chmod changes read, write, and execute permissions for owner, group, and others using symbolic or numeric notation.
-
----
+**Answer (MC style):** head
 
 
-### Q27
-<a id="q27"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+head displays the first 10 lines of a file by default. The number of lines can be changed with the -n option.
 
-**Question:** Which command displays the default route?
-
-**Choices:**
-- ip route
-- ip default
-- ss route
-- ss show route
-
-**Answer:** chown
-
-**Why / Concept:** chown modifies the owner (and optionally group) of a file. Requires root privileges for most changes.
+</details>
 
 ---
 
 
-### Q28
-<a id="q28"></a>
+## Q24. Which file contains the main configuration file for apache?
 
-**Question:** Question 28
+/etc/httpd/conf/http.conf
+/etc/http/conf/http.conf
+/etc/httpd/conf/httpd.conf
+/etc/http/conf/httpd.conf
 
-**Choices:**
-- Based on the following list of criteria determine which ones have to be satisfied for
-- an inbound mail server.
-- An MX record has to point to the mail server.
-- Masquerading is applied on all received email.
-- The server has to be setup to "host" for the domain.
-- The server has to be setup to "relay" for the domain.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** du
+**Answer (MC style):** tail
 
-**Why / Concept:** du shows the space used by files and directories, optionally summarizing totals with -s.
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+tail displays the last 10 lines by default and is often used with -f to follow file updates (like logs).
+
+</details>
 
 ---
 
 
-### Q29
-<a id="q29"></a>
+## Q25. Which mail servers "need" to look up a public DNS MX record?
 
-**Question:** What is the command used to prevent service "foobar" starting automatically upon
+None of these answers
+The user sending the email
+The receiving email server
+The user receiving the email
+The sending email server
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** grep
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+grep searches for patterns within files using regular expressions, printing matching lines.
+
+</details>
+
+---
+
+
+## Q26. An attribute is defined by a set of object classes.
+
+True
+False
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** chmod
+
+
+**Concept / Why:**  
+</summary> 
+
+Concept / Why:
+chmod changes read, write, and execute permissions for owner, group, and others using symbolic or numeric notation.
+
+</details>
+
+---
+
+
+## Q27. Which command displays the default route?
+
+ip route
+ip default
+ss route
+ss show route
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** chown
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+chown modifies the owner (and optionally group) of a file. Requires root privileges for most changes.
+
+</details>
+
+---
+
+
+## Q28. Based on the following list of criteria determine which ones have to be satisfied for
+an inbound mail server.
+
+An MX record has to point to the mail server.
+Masquerading is applied on all received email.
+The server has to be setup to "host" for the domain.
+The server has to be setup to "relay" for the domain.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** du
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+du shows the space used by files and directories, optionally summarizing totals with -s.
+
+</details>
+
+---
+
+
+## Q29. What is the command used to prevent service "foobar" starting automatically upon
 system boot up?
 
-**Answer:** df
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** df reports file system disk space usage in blocks, kilobytes, or human-readable formats (-h).
-
----
+**Answer (MC style):** df
 
 
-### Q30
-<a id="q30"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+df reports file system disk space usage in blocks, kilobytes, or human-readable formats (-h).
 
-**Question:** Question 30
-
-**Choices:**
-- The SMTP protocol is used to:
-- Share resources, such as files and printers, between Windows and Linuxplatforms
-- None of these choices
-- Maintain and share directory information
-- Resolve host names into IP addresses
-- Manage network configuration for client systems
-
-**Answer:** ps
-
-**Why / Concept:** ps lists currently running processes. Options like aux display all processes with full details.
+</details>
 
 ---
 
 
-### Q31
-<a id="q31"></a>
+## Q30. The SMTP protocol is used to:
 
-**Question:** Which of these firewalls are available on CENTOS 7?
+Share resources, such as files and printers, between Windows and Linuxplatforms
+None of these choices
+Maintain and share directory information
+Resolve host names into IP addresses
+Manage network configuration for client systems
 
-**Choices:**
-- firewalld
-- iptables
-- secured
-- ipchains
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** top
-
-**Why / Concept:** top provides a real-time, updating view of running processes, CPU usage, memory consumption, and system load.
-
----
+**Answer (MC style):** ps
 
 
-### Q32
-<a id="q32"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+ps lists currently running processes. Options like aux display all processes with full details.
 
-**Question:** Question 32
-
-**Choices:**
-- Enter the command line to look up the PTR record for "172.16.30.167" using the
-- nslookup command.
-
-**Answer:** man
-
-**Why / Concept:** man opens the manual pages for commands, showing syntax, options, and descriptions. It’s the built-in Linux reference.
+</details>
 
 ---
 
 
-### Q33
-<a id="q33"></a>
+## Q31. Which of these firewalls are available on CENTOS 7?
 
-**Question:** Question 33
+firewalld
+iptables
+secured
+ipchains
 
-**Choices:**
-- Enter the command line to look up the PTR record for "172.16.31.167" on the
-- teacher's master DNS (172.16.30.167) using the host command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** which
-
-**Why / Concept:** which returns the full path of a command’s executable by searching the directories in $PATH.
-
----
+**Answer (MC style):** top
 
 
-### Q34
-<a id="q34"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+top provides a real-time, updating view of running processes, CPU usage, memory consumption, and system load.
 
-**Question:** peachy.org and sunny.org?
-
-**Choices:**
-- Assuming you are already serving two domains, how many additional virtual hosts
-- have to be set up in Apache to provide websites for the domains happy.org,
-- Zero (0)
-- One (1)
-- Three (3)
-- It cannot be done.
-
-**Answer:** passwd
-
-**Why / Concept:** passwd updates a user’s password and optionally their password aging information.
+</details>
 
 ---
 
 
-### Q35
-<a id="q35"></a>
+## Q32. 
 
-**Question:** Which sshd configuration options control the use of public key authentication?
+Enter the command line to look up the PTR record for "172.16.30.167" using the
+nslookup command.
 
-**Choices:**
-- PasswordAuthentication
-- RSAAuthentication
-- PermitRootLogin
-- AuthorizedKeysFile
-- PubkeyAuthentication
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `ifconfig (or ip addr on modern systems)`
-
-**Why / Concept:** ifconfig displays interface names, IP addresses, netmasks, and status. It’s been largely replaced by ip addr in newer distros.
-
----
+**Answer (MC style):** man
 
 
-### Q36
-<a id="q36"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+man opens the manual pages for commands, showing syntax, options, and descriptions. It’s the built-in Linux reference.
 
-**Question:** Which file contains configuration for the DNS client (resolver)?
-
-**Choices:**
-- ~/resolv.conf
-- /etc/resolver.conf
-- /etc/sysconfig/resolve.conf
-- /etc/resolv.conf
-
-**Answer:** ping
-
-**Why / Concept:** ping sends ICMP echo requests to test host reachability and measure round-trip time.
+</details>
 
 ---
 
 
-### Q37
-<a id="q37"></a>
+## Q33. 
 
-**Question:** An object can be created using exactly one auxiliary class and any number, including
+Enter the command line to look up the PTR record for "172.16.31.167" on the
+teacher's master DNS (172.16.30.167) using the host command.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** which
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+which returns the full path of a command’s executable by searching the directories in $PATH.
+
+</details>
+
+---
+
+
+## Q34. Assuming you are already serving two domains, how many additional virtual hosts
+have to be set up in Apache to provide websites for the domains happy.org,
+peachy.org and sunny.org?
+
+Zero (0)
+One (1)
+Three (3)
+It cannot be done.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** passwd
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+passwd updates a user’s password and optionally their password aging information.
+
+</details>
+
+---
+
+
+## Q35. Which sshd configuration options control the use of public key authentication?
+
+PasswordAuthentication
+RSAAuthentication
+PermitRootLogin
+AuthorizedKeysFile
+PubkeyAuthentication
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `ifconfig (or ip addr on modern systems)`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+ifconfig displays interface names, IP addresses, netmasks, and status. It’s been largely replaced by ip addr in newer distros.
+
+</details>
+
+---
+
+
+## Q36. Which file contains configuration for the DNS client (resolver)?
+
+~/resolv.conf
+/etc/resolver.conf
+/etc/sysconfig/resolve.conf
+/etc/resolv.conf
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** ping
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+ping sends ICMP echo requests to test host reachability and measure round-trip time.
+
+</details>
+
+---
+
+
+## Q37. An object can be created using exactly one auxiliary class and any number, including
 zero, structural classes.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** `traceroute (or tracepath)`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** traceroute maps the path packets take, listing each hop and its response time, useful for network troubleshooting.
-
----
+**Answer (MC style):** `traceroute (or tracepath)`
 
 
-### Q38
-<a id="q38"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+traceroute maps the path packets take, listing each hop and its response time, useful for network troubleshooting.
 
-**Question:** Question 38
-
-**Choices:**
-- Enter the command line to look up the NS record for the domain "happy.org" on the
-- teacher's DNS (172.16.30.167) using the host command.
-
-**Answer:** `netstat (or ss)`
-
-**Why / Concept:** netstat lists open sockets, routing tables, and interface statistics. On modern systems, ss is preferred.
+</details>
 
 ---
 
 
-### Q39
-<a id="q39"></a>
+## Q38. Enter the command line to look up the NS record for the domain "happy.org" on the
+teacher's DNS (172.16.30.167) using the host command.
 
-**Question:** the package bind?
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Choices:**
-- Which file must be modified on the slave DNS to allow master/slave operation for
-- /etc/sysconfig/bind.conf
-- /etc/sysconfig/named.conf
-- /etc/bind.conf
-- /etc/named.conf
-
-**Answer:** wget
-
-**Why / Concept:** wget retrieves files from web or FTP servers non-interactively, useful for scripting automated downloads.
-
----
+**Answer (MC style):** `netstat (or ss)`
 
 
-### Q40
-<a id="q40"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+netstat lists open sockets, routing tables, and interface statistics. On modern systems, ss is preferred.
 
-**Question:** Question 40
-
-**Choices:**
-- HTTPS is:
-- HTTP that uses the TLS/SSL layer for security services
-- A different application layer protocol from HTTP
-- HTTP that includes additional security modules defined by the HTTPS protocol
-- A newer version of the HTTP protocol
-
-**Answer:** scp
-
-**Why / Concept:** scp uses SSH to copy files securely between hosts. It encrypts both the command and data during transfer.
+</details>
 
 ---
 
 
+## Q39. Which file must be modified on the slave DNS to allow master/slave operation for
+the package bind?
 
----
+/etc/sysconfig/bind.conf
+/etc/sysconfig/named.conf
+/etc/bind.conf
+/etc/named.conf
 
-## Q41–Q60
-<a id="q41-q60"></a>
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-### Q41
-<a id="q41"></a>
-
-**Question:** Question 41
-
-**Choices:**
-- Match the iptables other options with the description.
-- 1. -V					Verbose
-- 2. -n					Numeric
-- 3. -- line-numbers		Show line numbers
-
-**Answer:** ssh
-
-**Why / Concept:** ssh opens a secure, encrypted shell session on a remote host, replacing older insecure tools like telnet.
-
----
+**Answer (MC style):** wget
 
 
-### Q42
-<a id="q42"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+wget retrieves files from web or FTP servers non-interactively, useful for scripting automated downloads.
 
-**Question:** Record the command used to verify that the service "foobar" is currently running.
-
-**Answer:** lsmod
-
-**Why / Concept:** lsmod displays the status of loaded kernel modules, including their dependencies and usage counts.
+</details>
 
 ---
 
 
-### Q43
-<a id="q43"></a>
+## Q40. HTTPS is:
 
-**Question:** Question 43
+HTTP that uses the TLS/SSL layer for security services
+A different application layer protocol from HTTP
+HTTP that includes additional security modules defined by the HTTPS protocol
+A newer version of the HTTP protocol
 
-**Choices:**
-- Enter the command line to resolve the A record for "www.happy.org" using your
-- default resolver configuration.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** modprobe
-
-**Why / Concept:** modprobe loads kernel modules and their dependencies dynamically, simplifying manual insmod operations.
-
----
+**Answer (MC style):** scp
 
 
-### Q44
-<a id="q44"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+scp uses SSH to copy files securely between hosts. It encrypts both the command and data during transfer.
 
-**Question:** What is the minimum number of zone files required in your DNS?
-
-**Choices:**
-- You wish to configure apache to serve two "Virtual Hosts", happy.lab & grumpy.lab.
-- one
-- two
-- three
-- four
-
-**Answer:** rmmod
-
-**Why / Concept:** rmmod unloads a kernel module from memory. Often replaced by modprobe -r for dependency handling.
+</details>
 
 ---
 
 
-### Q45
-<a id="q45"></a>
+## Q41. Match the iptables other options with the description.
 
-**Question:** Record the command that lists all running services.
+1. -V					Verbose
+2. -n					Numeric
+3. -- line-numbers		Show line numbers
 
-**Answer:** dmesg
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** dmesg prints kernel ring buffer messages, often showing hardware initialization and driver load events.
-
----
+**Answer (MC style):** ssh
 
 
-### Q46
-<a id="q46"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+ssh opens a secure, encrypted shell session on a remote host, replacing older insecure tools like telnet.
 
-**Question:** Which command is used to show or set your hostname?
-
-**Answer:** `yum install (or dnf install on newer systems)`
-
-**Why / Concept:** yum and dnf are package managers for RHEL-based systems, resolving dependencies automatically during installation.
+</details>
 
 ---
 
 
-### Q47
-<a id="q47"></a>
+## Q42. Record the command used to verify that the service "foobar" is currently running.
 
-**Question:** What is the name of the default error log in Apache?
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Choices:**
-- error_log
-- error_log.log
-- error.log
-- errorlog.log
-- errorlog
+**Answer (MC style):** lsmod
 
-**Answer:** `yum update (or dnf upgrade)`
 
-**Why / Concept:** This command updates all packages to the latest available versions from enabled repositories.
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+lsmod displays the status of loaded kernel modules, including their dependencies and usage counts.
+
+</details>
 
 ---
 
 
-### Q48
-<a id="q48"></a>
+## Q43. 
 
-**Question:** Which file your hostname resolution order?
+Enter the command line to resolve the A record for "www.happy.org" using your
+default resolver configuration.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** modprobe
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+modprobe loads kernel modules and their dependencies dynamically, simplifying manual insmod operations.
+
+</details>
+
+---
+
+
+## Q44. You wish to configure apache to serve two "Virtual Hosts", happy.lab & grumpy.lab.
+What is the minimum number of zone files required in your DNS?
+one
+two
+three
+four
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** rmmod
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+rmmod unloads a kernel module from memory. Often replaced by modprobe -r for dependency handling.
+
+</details>
+
+---
+
+
+## Q45. Record the command that lists all running services.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** dmesg
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+dmesg prints kernel ring buffer messages, often showing hardware initialization and driver load events.
+
+</details>
+
+---
+
+
+## Q46. Which command is used to show or set your hostname?
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `yum install (or dnf install on newer systems)`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+yum and dnf are package managers for RHEL-based systems, resolving dependencies automatically during installation.
+
+</details>
+
+---
+
+
+## Q47. What is the name of the default error log in Apache?
+
+error_log
+error_log.log
+error.log
+errorlog.log
+errorlog
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `yum update (or dnf upgrade)`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+This command updates all packages to the latest available versions from enabled repositories.
+
+</details>
+
+---
+
+
+## Q48. Which file your hostname resolution order?
 /etc/nsswitch.conf
 
-**Answer:** `yum remove (or dnf remove)`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Removes the package and optionally unused dependencies, freeing disk space.
-
----
+**Answer (MC style):** `yum remove (or dnf remove)`
 
 
-### Q49
-<a id="q49"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Removes the package and optionally unused dependencies, freeing disk space.
 
-**Question:** Question 49
-
-**Choices:**
-- The three required components to have a functional email service are:
-- Mail User Agent, Mail Submission Agent, Mail Transfer Agent
-- Mail User Agent, Mail Transfer Agent, Mail Delivery Agent
-- Mail Submission Agent, Mail Transfer Agent, Mail Delivery Agent
-- Mail User Agent, Mail Submission Agent, Mail Delivery Agent
-
-**Answer:** `systemctl start <service>`
-
-**Why / Concept:** systemctl is the systemd service manager; start activates the service without enabling it on boot.
+</details>
 
 ---
 
 
-### Q50
-<a id="q50"></a>
+## Q49. The three required components to have a functional email service are:
 
-**Question:** Question 50
+Mail User Agent, Mail Submission Agent, Mail Transfer Agent
+Mail User Agent, Mail Transfer Agent, Mail Delivery Agent
+Mail Submission Agent, Mail Transfer Agent, Mail Delivery Agent
+Mail User Agent, Mail Submission Agent, Mail Delivery Agent
 
-**Choices:**
-- The LDAP protocol is used to:
-- Share resources, such as files and printers, between Windows and Linux platforms
-- Resolve host names into IP addresses
-- Manage network configuration, such as IP addresses, for client systems
-- Maintain and share directory information
-- None of the above
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `systemctl enable <service>`
-
-**Why / Concept:** enable creates a symbolic link in systemd configuration to auto-start the service during system boot.
-
----
+**Answer (MC style):** `systemctl start <service>`
 
 
-### Q51
-<a id="q51"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+systemctl is the systemd service manager; start activates the service without enabling it on boot.
 
-**Question:** Question 51
-
-**Choices:**
-- Postfix is considered to be primarily a:
-- Mail Transfer Agent
-- Mail Submission Agent
-- Mail User Agent
-- Mail Delivery Agent
-
-**Answer:** `systemctl stop <service>`
-
-**Why / Concept:** stop halts a running service without preventing it from starting on the next boot (unless disabled separately).
+</details>
 
 ---
 
 
-### Q52
-<a id="q52"></a>
+## Q50. The LDAP protocol is used to:
 
-**Question:** Question 52
+Share resources, such as files and printers, between Windows and Linux platforms
+Resolve host names into IP addresses
+Manage network configuration, such as IP addresses, for client systems
+Maintain and share directory information
+None of the above
 
-**Choices:**
-- Enter the command line to look up the MX record for the domain "happy.org" using
-- the host command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `systemctl disable <service>`
-
-**Why / Concept:** disable removes the boot-time symbolic link so the service won’t auto-start after reboots.
-
----
+**Answer (MC style):** `systemctl enable <service>`
 
 
-### Q53
-<a id="q53"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+enable creates a symbolic link in systemd configuration to auto-start the service during system boot.
 
-**Question:** By default, which interface(s) does postfix listen?
-
-**Choices:**
-- localhost or 127.0.0.1
-- The first ethernet adapter
-- All the ethernet adapters
-- All the ethernet adapters and localhost
-
-**Answer:** `systemctl restart <service>`
-
-**Why / Concept:** restart is a stop followed by a start in one step, useful after config changes.
+</details>
 
 ---
 
 
-### Q54
-<a id="q54"></a>
+## Q51. Postfix is considered to be primarily a:
 
-**Question:** Question 54
+Mail Transfer Agent
+Mail Submission Agent
+Mail User Agent
+Mail Delivery Agent
 
-**Choices:**
-- Enter the command line to look up the PTR record for "172.16.30.167" using the
-- host command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `systemctl status <service>`
-
-**Why / Concept:** Displays whether the service is active, its PID, last log entries, and exit codes.
-
----
+**Answer (MC style):** `systemctl stop <service>`
 
 
-### Q55
-<a id="q55"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+stop halts a running service without preventing it from starting on the next boot (unless disabled separately).
 
-**Question:** Question 55
-
-**Choices:**
-- When setting up name-based virtual hosts, the Apache configuration requires:
-- One DocumentRoot directive for each virtual host and one ServerName directive
-- One DocumentRoot directive and one ServerName directive
-- One DocumentRoot directive for each virtual host and one ServerName directive for each virtual host
-- One DocumentRoot directive and one ServerName directive for each virtual host
-
-**Answer:** `setenforce 0`
-
-**Why / Concept:** This command relaxes SELinux policy enforcement without disabling SELinux entirely, useful for troubleshooting.
+</details>
 
 ---
 
 
-### Q56
-<a id="q56"></a>
+## Q52. 
 
-**Question:** Question 56
+Enter the command line to look up the MX record for the domain "happy.org" using
+the host command.
 
-**Choices:**
-- Identify the correct MX record entry to be recorded in the zone file.
-- mail.example.lab. IN MX 10 172.16.30.200
-- example.lab. IN MX 10 mail.example.lab.
-- 172.16.30.200 IN MX 10 mail.example.lab.
-- mail.example.lab. IN MX 10 example.lab.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `Edit /etc/selinux/config and set SELINUX=permissive`
-
-**Why / Concept:** Changing the config file ensures the setting persists across reboots.
-
----
+**Answer (MC style):** `systemctl disable <service>`
 
 
-### Q57
-<a id="q57"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+disable removes the boot-time symbolic link so the service won’t auto-start after reboots.
 
-**Question:** Which of these are valid ways to send mail on the command line?
-
-**Choices:**
-- mail -s Test Email user8213@cst8213.lab
-- mail -s TestEmail user8213@cst8213.lab
-- mail -s Test Email user8213@172.16.30.167
-- mail -s TestEmail user8213@172.16.30.167
-- mail -s Test Email user8213@[172.16.30.167]
-- mail -s TestEmail user8213@[172.16.30.167]
-- mail -s Test Email user8213@host.cst8213.lab
-- mail -s TestEmail user8213@host.cst8213.lab
-
-**Answer:** getenforce
-
-**Why / Concept:** getenforce returns Enforcing, Permissive, or Disabled to show the active SELinux mode.
+</details>
 
 ---
 
 
-### Q58
-<a id="q58"></a>
+## Q53. By default, which interface(s) does postfix listen?
 
-**Question:** Which of these commands will let you view the mail queue?
+localhost or 127.0.0.1
+The first ethernet adapter
+All the ethernet adapters
+All the ethernet adapters and localhost
 
-**Choices:**
-- mailq -v
-- mailq -p
-- mailq
-- postqueue -p
-- postqueue -v
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** chcon
+**Answer (MC style):** `systemctl restart <service>`
 
-**Why / Concept:** chcon modifies SELinux security context labels for files without altering default policy settings.
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+restart is a stop followed by a start in one step, useful after config changes.
+
+</details>
 
 ---
 
 
-### Q59
-<a id="q59"></a>
+## Q54. 
 
-**Question:** Which mail server is the masquerading feature is setup on?
+Enter the command line to look up the PTR record for "172.16.30.167" using the
+host command.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `systemctl status <service>`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Displays whether the service is active, its PID, last log entries, and exit codes.
+
+</details>
+
+---
+
+
+## Q55. When setting up name-based virtual hosts, the Apache configuration requires:
+One DocumentRoot directive for each virtual host and one ServerName directive
+One DocumentRoot directive and one ServerName directive
+One DocumentRoot directive for each virtual host and one ServerName directive for each virtual host
+One DocumentRoot directive and one ServerName directive for each virtual host
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `setenforce 0`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+This command relaxes SELinux policy enforcement without disabling SELinux entirely, useful for troubleshooting.
+
+</details>
+
+---
+
+
+## Q56. Identify the correct MX record entry to be recorded in the zone file.
+
+mail.example.lab. IN MX 10 172.16.30.200
+example.lab. IN MX 10 mail.example.lab.
+172.16.30.200 IN MX 10 mail.example.lab.
+mail.example.lab. IN MX 10 example.lab.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `Edit /etc/selinux/config and set SELINUX=permissive`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Changing the config file ensures the setting persists across reboots.
+
+</details>
+
+---
+
+
+## Q57. Which of these are valid ways to send mail on the command line?
+
+mail -s Test Email user8213@cst8213.lab
+mail -s TestEmail user8213@cst8213.lab
+mail -s Test Email user8213@172.16.30.167
+mail -s TestEmail user8213@172.16.30.167
+mail -s Test Email user8213@[172.16.30.167]
+mail -s TestEmail user8213@[172.16.30.167]
+mail -s Test Email user8213@host.cst8213.lab
+mail -s TestEmail user8213@host.cst8213.lab
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** getenforce
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+getenforce returns Enforcing, Permissive, or Disabled to show the active SELinux mode.
+
+</details>
+
+---
+
+
+## Q58. Which of these commands will let you view the mail queue?
+
+mailq -v
+mailq -p
+mailq
+postqueue -p
+postqueue -v
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** chcon
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+chcon modifies SELinux security context labels for files without altering default policy settings.
+
+</details>
+
+---
+
+
+## Q59. Which mail server is the masquerading feature is setup on?
 inbound		 ?
 outbound
 
-**Answer:** restorecon
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** restorecon re-applies the default SELinux context from policy to the file path.
-
----
+**Answer (MC style):** restorecon
 
 
-### Q60
-<a id="q60"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+restorecon re-applies the default SELinux context from policy to the file path.
 
-**Question:** Question 60
-
-**Choices:**
-- Match the iptables targets with the description.
-- 1. DROP		Drop the packet. No reply to the source.
-- 2. REJECT	Reject the packet. Reply with appropriate ICMP message
-- 3. RETURN	The chain policy determines the fate of the packet
-- 4. ACCEPT	Let the packet through
-
-**Answer:** `ls -Z`
-
-**Why / Concept:** ls -Z shows SELinux labels alongside normal file listing, helping verify policy enforcement.
+</details>
 
 ---
 
 
+## Q60. Match the iptables targets with the description.
 
----
+1. DROP		Drop the packet. No reply to the source.
+2. REJECT	Reject the packet. Reply with appropriate ICMP message
+3. RETURN	The chain policy determines the fate of the packet
+4. ACCEPT	Let the packet through
 
-## Q61–Q80
-<a id="q61-q80"></a>
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-### Q61
-<a id="q61"></a>
-
-**Question:** Which apache configuration option specifies the port Apache listens on?
-
-**Choices:**
-- ListenPort
-- Port
-- Listen
-- 80
-
-**Answer:** `firewall-cmd --list-all-zones`
-
-**Why / Concept:** Lists every defined firewalld zone and the services, ports, and interfaces assigned to each.
-
----
+**Answer (MC style):** `ls -Z`
 
 
-### Q62
-<a id="q62"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+ls -Z shows SELinux labels alongside normal file listing, helping verify policy enforcement.
 
-**Question:** Question 62
-
-**Choices:**
-- The base/suffix for happy.org can be setup using the following object class:
-- top
-- inetOrgPerson
-- domain
-- person
-
-**Answer:** `firewall-cmd --list-all`
-
-**Why / Concept:** Shows services, ports, sources, and interfaces bound to the default active zone.
+</details>
 
 ---
 
 
-### Q63
-<a id="q63"></a>
+## Q61. Which apache configuration option specifies the port Apache listens on?
 
-**Question:** Question 63
+ListenPort
+Port
+Listen
+80
 
-**Choices:**
-- Enter the command line to resolve the A record for "www.happy.org" using your
-- professor's DNS at 172.16.30.167 using your preferred command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `firewall-cmd --permanent --add-service=http`
+**Answer (MC style):** `firewall-cmd --list-all-zones`
 
-**Why / Concept:** Allows HTTP traffic persistently by enabling the predefined http service in firewalld.
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Lists every defined firewalld zone and the services, ports, and interfaces assigned to each.
+
+</details>
 
 ---
 
 
-### Q64
-<a id="q64"></a>
+## Q62. The base/suffix for happy.org can be setup using the following object class:
 
-**Question:** Consistency of directory information across replicated LDAP servers is crucial while
+top
+inetOrgPerson
+domain
+person
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `firewall-cmd --list-all`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Shows services, ports, sources, and interfaces bound to the default active zone.
+
+</details>
+
+---
+
+
+## Q63. 
+
+Enter the command line to resolve the A record for "www.happy.org" using your
+professor's DNS at 172.16.30.167 using your preferred command.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `firewall-cmd --permanent --add-service=http`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Allows HTTP traffic persistently by enabling the predefined http service in firewalld.
+
+</details>
+
+---
+
+
+## Q64. Consistency of directory information across replicated LDAP servers is crucial while
 consistency of data stored in transactional databases is not.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** `firewall-cmd --reload`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Applies configuration changes from permanent rules without restarting the service.
-
----
+**Answer (MC style):** `firewall-cmd --reload`
 
 
-### Q65
-<a id="q65"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Applies configuration changes from permanent rules without restarting the service.
 
-**Question:** Question 65
-
-**Choices:**
-- Identify the error in the following LDIF entry:
-- dn: cn=Sarah Jones,ou=people,dc=example.com
-- objectclass: inetorgperson
-- cn: Sarah Jones
-- sn: Jones
-- mail: Sarah.Jones@example.com
-- mail: sjones@example.com
-- There is no error
-- There can only be one mail attribute, not two
-- The dc attribute does not have a valid value
-- The syntax for the attributes should use an = sign, not a colon, as in sn=Jones
-
-**Answer:** `firewall-cmd --add-service=https`
-
-**Why / Concept:** Enables HTTPS access until the next reload or reboot without altering permanent settings.
+</details>
 
 ---
 
 
-### Q66
-<a id="q66"></a>
+## Q65. Identify the error in the following LDIF entry:
+dn: cn=Sarah Jones,ou=people,dc=example.com
+objectclass: inetorgperson
+cn: Sarah Jones
+sn: Jones
+mail: Sarah.Jones@example.com
+mail: sjones@example.com
 
-**Question:** The default sshd_config shipped with OpenSSH is to specify options with their
+There is no error
+There can only be one mail attribute, not two
+The dc attribute does not have a valid value
+The syntax for the attributes should use an = sign, not a colon, as in sn=Jones
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `firewall-cmd --add-service=https`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Enables HTTPS access until the next reload or reboot without altering permanent settings.
+
+</details>
+
+---
+
+
+## Q66. The default sshd_config shipped with OpenSSH is to specify options with their
 default values commented.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** `firewall-cmd --permanent --remove-service=ssh`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Blocks SSH traffic persistently by removing its service entry from the firewall.
-
----
+**Answer (MC style):** `firewall-cmd --permanent --remove-service=ssh`
 
 
-### Q67
-<a id="q67"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Blocks SSH traffic persistently by removing its service entry from the firewall.
 
-**Question:** You use DNS or /etc/hosts to test your apache virtual hosts remotely.
-
-**Choices:**
-- True
-- False
-
-**Answer:** `firewall-cmd --get-default-zone`
-
-**Why / Concept:** Reveals the zone where unassigned network interfaces are placed by default.
+</details>
 
 ---
 
 
-### Q68
-<a id="q68"></a>
+## Q67. You use DNS or /etc/hosts to test your apache virtual hosts remotely.
 
-**Question:** Question 68
+True
+False
 
-**Choices:**
-- Enter the command line to look up the MX record for the domain "happy.org" using
-- the nslookup command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `firewall-cmd --set-default-zone=<zone>`
-
-**Why / Concept:** Changes the default security zone for future interface assignments.
-
----
+**Answer (MC style):** `firewall-cmd --get-default-zone`
 
 
-### Q69
-<a id="q69"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Reveals the zone where unassigned network interfaces are placed by default.
 
-**Question:** Which command(s) shows all interface configurations?
-
-**Choices:**
-- ip addr show ens33 ens34
-- ip addr show
-- ip addr
-- ip addr show all
-- ip show
-- ip
-
-**Answer:** `firewall-cmd --get-services`
-
-**Why / Concept:** Displays all predefined services that can be added as firewall rules.
+</details>
 
 ---
 
 
-### Q70
-<a id="q70"></a>
+## Q68. 
 
-**Question:** Which sshd configuration options control the use of password authentication?
+Enter the command line to look up the MX record for the domain "happy.org" using
+the nslookup command.
 
-**Choices:**
-- PasswordAuthentication
-- RSAAuthentication
-- PermitRootLogin
-- AuthorizedKeysFile
-- PubkeyAuthentication
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `firewall-cmd --query-service=<service>`
-
-**Why / Concept:** Returns yes if the service is permitted in the current active zone; no otherwise.
-
----
+**Answer (MC style):** `firewall-cmd --set-default-zone=<zone>`
 
 
-### Q71
-<a id="q71"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Changes the default security zone for future interface assignments.
 
-**Question:** Which of these utility programs can modify entries to an LDAP DIT?
-
-**Choices:**
-- Idapadd
-- Idapmodify
-- Idapdelete
-- ditadd
-- ditmodify
-- ditdelete
-
-**Answer:** `ip addr show`
-
-**Why / Concept:** Lists all interfaces, IPs, MAC addresses, and interface states. Preferred over ifconfig in modern systems.
+</details>
 
 ---
 
 
-### Q72
-<a id="q72"></a>
+## Q69. Which command(s) shows all interface configurations?
 
-**Question:** Which utility will best verify basic network connectivity?
+ip addr show ens33 ens34
+ip addr show
+ip addr
+ip addr show all
+ip show
+ip
 
-**Choices:**
-- ping
-- netstat
-- 55
-- ip
-- All of these choices
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `ip route show`
-
-**Why / Concept:** Displays routes, gateways, and metrics that determine packet forwarding.
-
----
+**Answer (MC style):** `firewall-cmd --get-services`
 
 
-### Q73
-<a id="q73"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Displays all predefined services that can be added as firewall rules.
 
-**Question:** package "foobar"?
-
-**Choices:**
-- What is the rpm command line that lists all the files that are part of the installed
-- A/
-
-**Answer:** `ping <host>`
-
-**Why / Concept:** Confirms whether a host is reachable and measures packet loss and latency.
+</details>
 
 ---
 
 
-### Q74
-<a id="q74"></a>
+## Q70. Which sshd configuration options control the use of password authentication?
 
-**Question:** Question 74
+PasswordAuthentication
+RSAAuthentication
+PermitRootLogin
+AuthorizedKeysFile
+PubkeyAuthentication
 
-**Choices:**
-- To verify the mail server of the domain example.lab based on the MX record the
-- following dig command is used:
-- dig MX mail.example.lab
-- dig mail.example.lab
-- dig MX example.lab
-- dig mx.example.lab
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `traceroute <host>`
-
-**Why / Concept:** Lists each hop along the route to the destination, useful for diagnosing network delays.
-
----
+**Answer (MC style):** `firewall-cmd --query-service=<service>`
 
 
-### Q75
-<a id="q75"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Returns yes if the service is permitted in the current active zone; no otherwise.
 
-**Question:** An "outbound" only mail server typically "hosts" email for its domain.
-
-**Choices:**
-- True
-- False
-
-**Answer:** `dig <domain>`
-
-**Why / Concept:** Queries DNS servers for records such as A, AAAA, MX, and more.
+</details>
 
 ---
 
 
-### Q76
-<a id="q76"></a>
+## Q71. Which of these utility programs can modify entries to an LDAP DIT?
 
-**Question:** Which command(s) show all listening TCP ports?
+Idapadd
+Idapmodify
+Idapdelete
+ditadd
+ditmodify
+ditdelete
 
-**Choices:**
-- netstat -Iptn
-- 5s -Iptn
-- ip listen
-- ss listen
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `nslookup <domain>`
-
-**Why / Concept:** Checks DNS resolution through the configured /etc/resolv.conf settings.
-
----
+**Answer (MC style):** `ip addr show`
 
 
-### Q77
-<a id="q77"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Lists all interfaces, IPs, MAC addresses, and interface states. Preferred over ifconfig in modern systems.
 
-**Question:** Question 77
-
-**Choices:**
-- Enter the command line to look up the PTR record for "172.16.31.167" on your
-- master DNS (172.16.30.167) using the dig command from another Linux machine.
-
-**Answer:** `ss -tuln`
-
-**Why / Concept:** Shows TCP/UDP sockets in listening state, with ports and IP bindings.
+</details>
 
 ---
 
 
-### Q78
-<a id="q78"></a>
+## Q72. Which utility will best verify basic network connectivity?
 
-**Question:** Match the iptables commands with the description.
+ping
+netstat
+55
+ip
+All of these choices
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `ip route show`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Displays routes, gateways, and metrics that determine packet forwarding.
+
+</details>
+
+---
+
+
+## Q73. What is the rpm command line that lists all the files that are part of the installed
+package "foobar"?
+A/
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `ping <host>`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Confirms whether a host is reachable and measures packet loss and latency.
+
+</details>
+
+---
+
+
+## Q74. To verify the mail server of the domain example.lab based on the MX record the
+following dig command is used:
+
+dig MX mail.example.lab
+dig mail.example.lab
+dig MX example.lab
+dig mx.example.lab
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `traceroute <host>`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Lists each hop along the route to the destination, useful for diagnosing network delays.
+
+</details>
+
+---
+
+
+## Q75. An "outbound" only mail server typically "hosts" email for its domain.
+
+True
+False
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `dig <domain>`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Queries DNS servers for records such as A, AAAA, MX, and more.
+
+</details>
+
+---
+
+
+## Q76. Which command(s) show all listening TCP ports?
+
+netstat -Iptn
+5s -Iptn
+ip listen
+ss listen
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `nslookup <domain>`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Checks DNS resolution through the configured /etc/resolv.conf settings.
+
+</details>
+
+---
+
+
+## Q77. 
+
+Enter the command line to look up the PTR record for "172.16.31.167" on your
+master DNS (172.16.30.167) using the dig command from another Linux machine.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `ss -tuln`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Shows TCP/UDP sockets in listening state, with ports and IP bindings.
+
+</details>
+
+---
+
+
+## Q78. Match the iptables commands with the description.
 List rules
 Flush rules
 Insert rule
@@ -1408,594 +1727,741 @@ Help
 5. -F
 6. -h
 
-**Answer:** `telnet <host> <port>`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Useful for verifying service availability on a specific port (e.g., SMTP on port 25).
-
----
+**Answer (MC style):** `telnet <host> <port>`
 
 
-### Q79
-<a id="q79"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Useful for verifying service availability on a specific port (e.g., SMTP on port 25).
 
-**Question:** Question 79
-
-**Choices:**
-- Match the options for ss (or netstat) with the description.
-- show TCP ports
-- programs & pids
-- listening
-- numeric output
-- 1. I
-- 2. p
-- 3. t
-- 4. n
-
-**Answer:** `hostname`
-
-**Why / Concept:** Shows the short hostname configured for the system.
+</details>
 
 ---
 
 
-### Q80
-<a id="q80"></a>
+## Q79. Match the options for ss (or netstat) with the description.
+show TCP ports
+programs & pids
+listening
+numeric output
 
-**Question:** Which of these utility programs can add entries to an LDAP DIT?
+1. I
+2. p
+3. t
+4. n
 
-**Choices:**
-- Idapdelete
-- ditadd
-- Idapmodify
-- ditmodify
-- ditdelete
-- Idapadd
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `hostnamectl set-hostname <name>`
-
-**Why / Concept:** Changes hostname without reboot; persists unless overridden by DHCP or cloud-init.
-
----
+**Answer (MC style):** `hostname`
 
 
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Shows the short hostname configured for the system.
 
----
-
-## Q81–Q100
-<a id="q81-q100"></a>
-
-### Q81
-<a id="q81"></a>
-
-**Question:** Write the command used to display the running log file for the Postfix mail server:
-
-**Answer:** `dnf install postfix`
-
-**Why / Concept:** Installs the Postfix MTA package from the system’s repositories for sending/receiving mail.
+</details>
 
 ---
 
 
-### Q82
-<a id="q82"></a>
+## Q80. Which of these utility programs can add entries to an LDAP DIT?
 
-**Question:** DNS?
+Idapdelete
+ditadd
+Idapmodify
+ditmodify
+ditdelete
+Idapadd
 
-**Choices:**
-- Which of these issues may cause the slave DNS not to syncronize with the master
-- Incorrect specification in master or slave configuration file
-- Zone serial number not higher than last sync
-- Not having a file specified in the client configuration
-- Network connectivity
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** swift
-
-**Why / Concept:** Starts the Postfix service immediately and ensures it runs on subsequent boots.
-
----
+**Answer (MC style):** `hostnamectl set-hostname <name>`
 
 
-### Q83
-<a id="q83"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Changes hostname without reboot; persists unless overridden by DHCP or cloud-init.
 
-**Question:** Which of these utility programs can delete entries to an LDAP DIT?
-
-**Choices:**
-- Idapadd
-- ditadd
-- ditdelete
-- Idapdelete
-- Idapmodify
-- ditmodify
-
-**Answer:** `/etc/postfix/main.cf`
-
-**Why / Concept:** Contains core Postfix settings like myhostname, mydomain, and mynetworks.
+</details>
 
 ---
 
 
-### Q84
-<a id="q84"></a>
+## Q81. Write the command used to display the running log file for the Postfix mail server:
 
-**Question:** What is the default user used by apache while running?
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Choices:**
-- apache
-- cst8213
-- The user that started apache
-- root
-- nobody
-
-**Answer:** `systemctl reload postfix`
-
-**Why / Concept:** Applies changes made in Postfix configs without interrupting mail delivery.
-
----
+**Answer (MC style):** `dnf install postfix`
 
 
-### Q85
-<a id="q85"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Installs the Postfix MTA package from the system’s repositories for sending/receiving mail.
 
-**Question:** Which file contains your default name servers?
-
-**Answer:** mailq
-
-**Why / Concept:** Displays pending messages in the queue for troubleshooting delivery issues.
+</details>
 
 ---
 
 
-### Q86
-<a id="q86"></a>
+## Q82. Which of these issues may cause the slave DNS not to syncronize with the master
+DNS?
 
-**Question:** Question 86
+Incorrect specification in master or slave configuration file
+Zone serial number not higher than last sync
+Not having a file specified in the client configuration
+Network connectivity
 
-**Choices:**
-- Enter the command line to look up the NS record for the domain "happy.org" using
-- the dig command.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `postqueue -f`
-
-**Why / Concept:** Forces an immediate delivery attempt of all queued messages.
-
----
+**Answer (MC style):** swift
 
 
-### Q87
-<a id="q87"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Starts the Postfix service immediately and ensures it runs on subsequent boots.
 
-**Question:** Question 87
-
-**Choices:**
-- Enter the command line to look up the NS record for the domain "happy.org" on the
-- teacher's DNS (172.16.30.167) using the nslookup command.
-
-**Answer:** `/etc/postfix/virtual`
-
-**Why / Concept:** Maps email addresses to local users or other destinations.
+</details>
 
 ---
 
 
-### Q88
-<a id="q88"></a>
+## Q83. Which of these utility programs can delete entries to an LDAP DIT?
 
-**Question:** Question 88
+Idapadd
+ditadd
+ditdelete
+Idapdelete
+Idapmodify
+ditmodify
 
-**Choices:**
-- If object class inetOrgPerson is a subclass of object class person, the following
-- applies:
-- Object class inheritance is not part of the LDAP protocol
-- All attributes of person are inherited by inetOrgPerson, except the required attributes
-- All attributes of person are inherited by inetOrgPerson, including the required attributes
-- All attributes of inetOrgPerson are inherited by person
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `postmap <file>`
-
-**Why / Concept:** Compiles text mapping files (e.g., virtual, access) into Postfix’s hashed DB format.
-
----
+**Answer (MC style):** `/etc/postfix/main.cf`
 
 
-### Q89
-<a id="q89"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Contains core Postfix settings like myhostname, mydomain, and mynetworks.
 
-**Question:** port?
-
-**Choices:**
-- Which command can be used to verify the HTTPD service is listening on the correct
-- ip
-- netstat
-- 55
-- ifconfig
-- ipconfig
-
-**Answer:** `echo "Test" | mail -s "Subject" user@example.com`
-
-**Why / Concept:** Quick way to send an email through the system’s MTA for verification.
+</details>
 
 ---
 
 
-### Q90
-<a id="q90"></a>
+## Q84. What is the default user used by apache while running?
 
-**Question:** Question 90
+apache
+cst8213
+The user that started apache
+root
+nobody
 
-**Choices:**
-- Enter the command line to look up the NS record for the domain "happy.org" on the
-- professor's DNS (172.16.30.167) using the dig command (without -t).
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `systemctl status postfix`
+**Answer (MC style):** `systemctl reload postfix`
 
-**Why / Concept:** Shows whether Postfix is active and running, plus recent log messages.
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Applies changes made in Postfix configs without interrupting mail delivery.
+
+</details>
 
 ---
 
 
-### Q91
-<a id="q91"></a>
+## Q85. Which file contains your default name servers?
 
-**Question:** Apache fails to start due to an unknown directive in the configuration file. One
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** mailq
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Displays pending messages in the queue for troubleshooting delivery issues.
+
+</details>
+
+---
+
+
+## Q86. 
+
+Enter the command line to look up the NS record for the domain "happy.org" using
+the dig command.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `postqueue -f`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Forces an immediate delivery attempt of all queued messages.
+
+</details>
+
+---
+
+
+## Q87. Enter the command line to look up the NS record for the domain "happy.org" on the
+teacher's DNS (172.16.30.167) using the nslookup command.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `/etc/postfix/virtual`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Maps email addresses to local users or other destinations.
+
+</details>
+
+---
+
+
+## Q88. If object class inetOrgPerson is a subclass of object class person, the following
+applies:
+Object class inheritance is not part of the LDAP protocol
+All attributes of person are inherited by inetOrgPerson, except the required attributes
+All attributes of person are inherited by inetOrgPerson, including the required attributes
+All attributes of inetOrgPerson are inherited by person
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `postmap <file>`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Compiles text mapping files (e.g., virtual, access) into Postfix’s hashed DB format.
+
+</details>
+
+---
+
+
+## Q89. Which command can be used to verify the HTTPD service is listening on the correct
+port?
+
+ip
+netstat
+55
+ifconfig
+ipconfig
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `echo "Test" | mail -s "Subject" user@example.com`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Quick way to send an email through the system’s MTA for verification.
+
+</details>
+
+---
+
+
+## Q90. Enter the command line to look up the NS record for the domain "happy.org" on the
+professor's DNS (172.16.30.167) using the dig command (without -t).
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `systemctl status postfix`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Shows whether Postfix is active and running, plus recent log messages.
+
+</details>
+
+---
+
+
+## Q91. Apache fails to start due to an unknown directive in the configuration file. One
 possibility could be that the corresponding module is not loaded.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** `dnf install openldap-servers openldap-clients`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Installs the LDAP daemon (slapd) and client tools for directory services.
-
----
+**Answer (MC style):** `dnf install openldap-servers openldap-clients`
 
 
-### Q92
-<a id="q92"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Installs the LDAP daemon (slapd) and client tools for directory services.
 
-**Question:** Practically, who should be able to look up a public DNS MX record?
-
-**Choices:**
-- The sending email server
-- The receiving email server
-- The user sending the email
-- The user receiving the email
-- None of these answers
-
-**Answer:** `systemctl start slapd`
-
-**Why / Concept:** The slapd service handles LDAP requests and directory operations.
+</details>
 
 ---
 
 
-### Q93
-<a id="q93"></a>
+## Q92. Practically, who should be able to look up a public DNS MX record?
 
-**Question:** Question 93
+The sending email server
+The receiving email server
+The user sending the email
+The user receiving the email
+None of these answers
 
-**Choices:**
-- An object is created based on one object class. The object class must be:
-- Auxiliary
-- Structural
-- There is only one type of object class
-- Abstract
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `systemctl enable slapd`
-
-**Why / Concept:** Ensures the LDAP server starts automatically after system reboots.
-
----
+**Answer (MC style):** `systemctl start slapd`
 
 
-### Q94
-<a id="q94"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+The slapd service handles LDAP requests and directory operations.
 
-**Question:** Question 94
-
-**Choices:**
-- Enter the command line to look up the MX record for the domain "happy.org" using
-- the dig command.
-
-**Answer:** `/etc/openldap/slapd.d/`
-
-**Why / Concept:** Stores runtime-configurable settings as LDIF files instead of a single slapd.conf file.
+</details>
 
 ---
 
 
-### Q95
-<a id="q95"></a>
+## Q93. An object is created based on one object class. The object class must be:
 
-**Question:** Which command(s) verify sshd is listening of the configured port(s)?
+Auxiliary
+Structural
+There is only one type of object class
+Abstract
 
-**Choices:**
-- netstat -Iptn
-- ss -Iptn
-- ip listen
-- ss listen
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `ldapadd -x -D "cn=Manager,dc=example,dc=com" -W -f file.ldif`
-
-**Why / Concept:** Uses simple authentication (-x) and the admin bind DN to insert directory entries.
-
----
+**Answer (MC style):** `systemctl enable slapd`
 
 
-### Q96
-<a id="q96"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Ensures the LDAP server starts automatically after system reboots.
 
-**Question:** Which utility is used to add entries to LDAP from a properly configured LDIF file?
-
-**Answer:** `ldapsearch -x -b "dc=example,dc=com" "(cn=John Doe)"`
-
-**Why / Concept:** Queries the LDAP directory for objects meeting specified attribute criteria.
+</details>
 
 ---
 
 
-### Q97
-<a id="q97"></a>
+## Q94. 
 
-**Question:** Which command displays interface configuration for ens160?
+Enter the command line to look up the MX record for the domain "happy.org" using
+the dig command.
 
-**Choices:**
-- ip addr show ens160
-- ip addr ens160
-- p addr
-- ip show ens160
-- ip ens160
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `ldapmodify -x -D "cn=Manager,dc=example,dc=com" -W -f changes.ldif`
-
-**Why / Concept:** Applies attribute updates to existing directory entries.
-
----
+**Answer (MC style):** `/etc/openldap/slapd.d/`
 
 
-### Q98
-<a id="q98"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Stores runtime-configurable settings as LDIF files instead of a single slapd.conf file.
 
-**Question:** Which utility is used to search the LDAP DIT?
-
-**Answer:** `ldapdelete -x -D "cn=Manager,dc=example,dc=com" -W "cn=John Doe,dc=example,dc=com"`
-
-**Why / Concept:** Removes an entry by specifying its full Distinguished Name (DN).
+</details>
 
 ---
 
 
-### Q99
-<a id="q99"></a>
+## Q95. Which command(s) verify sshd is listening of the configured port(s)?
 
-**Question:** Which of these command line utilities can be used to perform DNS lookups?
+netstat -Iptn
+ss -Iptn
+ip listen
+ss listen
 
-**Choices:**
-- nslookup
-- dig
-- dns
-- lookup
-- host
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `TCP/UDP port 389`
+**Answer (MC style):** `ldapadd -x -D "cn=Manager,dc=example,dc=com" -W -f file.ldif`
 
-**Why / Concept:** Default LDAP traffic runs over port 389; LDAPS (encrypted) uses port 636.
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Uses simple authentication (-x) and the admin bind DN to insert directory entries.
+
+</details>
 
 ---
 
 
-### Q100
-<a id="q100"></a>
+## Q96. Which utility is used to add entries to LDAP from a properly configured LDIF file?
 
-**Question:** Which configuration file controls SELINUX?
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `ldapsearch -x -b "dc=example,dc=com" "(cn=John Doe)"`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Queries the LDAP directory for objects meeting specified attribute criteria.
+
+</details>
+
+---
+
+
+## Q97. Which command displays interface configuration for ens160?
+
+ip addr show ens160
+ip addr ens160
+p addr
+ip show ens160
+ip ens160
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `ldapmodify -x -D "cn=Manager,dc=example,dc=com" -W -f changes.ldif`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Applies attribute updates to existing directory entries.
+
+</details>
+
+---
+
+
+## Q98. Which utility is used to search the LDAP DIT?
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `ldapdelete -x -D "cn=Manager,dc=example,dc=com" -W "cn=John Doe,dc=example,dc=com"`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Removes an entry by specifying its full Distinguished Name (DN).
+
+</details>
+
+---
+
+
+## Q99. Which of these command line utilities can be used to perform DNS lookups?
+
+nslookup
+dig
+dns
+lookup
+host
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `TCP/UDP port 389`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Default LDAP traffic runs over port 389; LDAPS (encrypted) uses port 636.
+
+</details>
+
+---
+
+
+## Q100. Which configuration file controls SELINUX?
 A/
 
-**Answer:** `slapcat > backup.ldif`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Creates a raw export of the entire LDAP database in LDIF format for backup or migration.
+**Answer (MC style):** `slapcat > backup.ldif`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Creates a raw export of the entire LDAP database in LDIF format for backup or migration.
+
+</details>
 
 ---
 
 
-
----
-
-## Q101–Q110
-<a id="q101-q110"></a>
-
-### Q101
-<a id="q101"></a>
-
-**Question:** "Aliasing" is used to redirect email addressed to a generic account such as
+## Q101. "Aliasing" is used to redirect email addressed to a generic account such as
 "webmaster" to a user account such as "arnold". As such the recipient address is
 rewritten by the receiving mail server.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** `dnf install samba samba-client`
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** Installs the SMB/CIFS file sharing service and client utilities.
-
----
+**Answer (MC style):** `dnf install samba samba-client`
 
 
-### Q102
-<a id="q102"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Installs the SMB/CIFS file sharing service and client utilities.
 
-**Question:** Question 102
-
-**Choices:**
-- Match the iptables parameters with the description.
-- Source
-- Out-bound interface
-- In-bound interface
-- Destination
-- Port
-- 1. -5
-- 2. -d
-- 3. -P
-- 4. -i
-- 5. -0
-
-**Answer:** `/etc/samba/smb.conf`
-
-**Why / Concept:** Defines shared resources, authentication, and global settings for the Samba service.
+</details>
 
 ---
 
 
-### Q103
-<a id="q103"></a>
+## Q102. Match the iptables parameters with the description.
+Source
+Out-bound interface
+In-bound interface
+Destination
+Port
+1. -5
+2. -d
+3. -P
+4. -i
+5. -0
 
-**Question:** To send mail using the form user@domain.tld, where the mail server for the domain
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `/etc/samba/smb.conf`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Defines shared resources, authentication, and global settings for the Samba service.
+
+</details>
+
+---
+
+
+## Q103. To send mail using the form user@domain.tld, where the mail server for the domain
 is mx.domain.tld, the A record for mx.domain.tld in the zone file for the domain is
 sufficient.
 
-**Choices:**
-- True
-- False
+True
+False
 
-**Answer:** pgsql
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Why / Concept:** smb handles file sharing, nmb manages NetBIOS name resolution for SMB/CIFS.
-
----
+**Answer (MC style):** pgsql
 
 
-### Q104
-<a id="q104"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+smb handles file sharing, nmb manages NetBIOS name resolution for SMB/CIFS.
 
-**Question:** Question 104
-
-**Choices:**
-- To locate an object in the DIT you use the _______ of the object.
-- RDN
-- None of these choices
-- FQDN
-- DNS
-
-**Answer:** `smbpasswd -a username`
-
-**Why / Concept:** Adds or updates a Samba account password, stored separately from system passwords.
+</details>
 
 ---
 
 
-### Q105
-<a id="q105"></a>
+## Q104. To locate an object in the DIT you use the _______ of the object.
 
-**Question:** Which apache block directive is used to configure virtual hosts?
+RDN
+None of these choices
+FQDN
+DNS
 
-**Choices:**
-- Virtual
-- MultiHost
-- Multi
-- VirtualHost
-- Host
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** testparm
-
-**Why / Concept:** Validates smb.conf syntax before restarting the service.
-
----
+**Answer (MC style):** `smbpasswd -a username`
 
 
-### Q106
-<a id="q106"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Adds or updates a Samba account password, stored separately from system passwords.
 
-**Question:** Question 106
-
-**Choices:**
-- To setup the resolver on the client system to provide hostname resolution with
-- LDAP in addition to static and DNS-style host name resolution, the following client
-- configuration file has to be edited:
-- /etc/resolv.conf
-- /etc/nsswitch.conf
-- /etc/hosts
-- /etc/services
-
-**Answer:** `TCP 139 & 445, UDP 137 & 138`
-
-**Why / Concept:** TCP ports handle file sharing connections; UDP ports handle NetBIOS name service and datagrams.
+</details>
 
 ---
 
 
-### Q107
-<a id="q107"></a>
+## Q105. Which apache block directive is used to configure virtual hosts?
+Virtual
+MultiHost
+Multi
+VirtualHost
+Host
 
-**Question:** You use DNS or /etc/hosts to test your apache virtual hosts locally.
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Choices:**
-- True
-- False
-
-**Answer:** `dnf install nfs-utils`
-
-**Why / Concept:** Provides NFS server and client functionality for Linux file sharing over the network.
-
----
+**Answer (MC style):** testparm
 
 
-### Q108
-<a id="q108"></a>
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Validates smb.conf syntax before restarting the service.
 
-**Question:** Question 108
-
-**Choices:**
-- Assume that name-based virtual hosting is setup for the IP address 172.16.30.199
-- on a server with more than one interface. You want to display a web site when your
-- web server is accessed using a different (and valid) IP address. To accomplish this you
-- should: (look at hint)
-- Do nothing: the site of the first virtual host will automatically be displayed.
-- Setup a "default" site in the virtual site section
-- Setup a separate Apache to listen on the different IP address after making sure
-- that the current Apache is not listening on that IP address.
-- It cannot be done: you cannot setup a site for another interface when setting up
-- virtual hosting for a given interface.
-
-**Answer:** `/etc/exports`
-
-**Why / Concept:** Specifies directories to share and their permissions for NFS clients.
+</details>
 
 ---
 
 
-### Q109
-<a id="q109"></a>
+## Q106. To setup the resolver on the client system to provide hostname resolution with
+LDAP in addition to static and DNS-style host name resolution, the following client
+configuration file has to be edited:
+/etc/resolv.conf
+/etc/nsswitch.conf
+/etc/hosts
+/etc/services
 
-**Question:** Which utility will best verify basic network connectivity?
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Choices:**
-- ping
-- netstat
-- 55
-- ip
-- All of these choices
+**Answer (MC style):** `TCP 139 & 445, UDP 137 & 138`
 
-**Answer:** `exportfs -r`
 
-**Why / Concept:** Re-reads /etc/exports to apply changes without restarting NFS services.
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+TCP ports handle file sharing connections; UDP ports handle NetBIOS name service and datagrams.
+
+</details>
 
 ---
 
 
-### Q110
-<a id="q110"></a>
+## Q107. You use DNS or /etc/hosts to test your apache virtual hosts locally.
 
-**Question:** Question 110
+True
+False
 
-**Choices:**
-- When data is downloaded from a web server to a client browser, the type of data
-- (text, image, audio, etc.) is determined by the:
-- File extension of the downloaded document
-- DocType directive in the Apache configuration
-- Content-Type header based on MIME types
+<details>
+<summary>Answer, Concept & Reference</summary>
 
-**Answer:** `mount server:/path/to/share /mnt/mountpoint`
+**Answer (MC style):** `dnf install nfs-utils`
 
-**Why / Concept:** Attaches a remote NFS directory to the local filesystem for access.
 
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Provides NFS server and client functionality for Linux file sharing over the network.
+
+</details>
+
+---
+
+
+## Q108. Assume that name-based virtual hosting is setup for the IP address 172.16.30.199
+on a server with more than one interface. You want to display a web site when your
+web server is accessed using a different (and valid) IP address. To accomplish this you
+should: (look at hint)
+
+Do nothing: the site of the first virtual host will automatically be displayed.
+Setup a "default" site in the virtual site section
+Setup a separate Apache to listen on the different IP address after making sure
+that the current Apache is not listening on that IP address.
+It cannot be done: you cannot setup a site for another interface when setting up
+virtual hosting for a given interface.
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `/etc/exports`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Specifies directories to share and their permissions for NFS clients.
+
+</details>
+
+---
+
+
+## Q109. Which utility will best verify basic network connectivity?
+
+ping
+netstat
+55
+ip
+All of these choices
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `exportfs -r`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Re-reads /etc/exports to apply changes without restarting NFS services.
+
+</details>
+
+---
+
+
+## Q110. When data is downloaded from a web server to a client browser, the type of data
+(text, image, audio, etc.) is determined by the:
+File extension of the downloaded document
+
+DocType directive in the Apache configuration
+Content-Type header based on MIME types
+
+<details>
+<summary>Answer, Concept & Reference</summary>
+
+**Answer (MC style):** `mount server:/path/to/share /mnt/mountpoint`
+
+
+**Concept / Why:**  
+</summary> 
+Concept / Why:
+Attaches a remote NFS directory to the local filesystem for access.
+
+</details>
+
+---
