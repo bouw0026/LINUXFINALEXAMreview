@@ -405,7 +405,9 @@ Apache URL Mapping Documentation
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** `nslookup -type=PTR 167.31.16.172.in-addr.arpa. 172.16.31.167`
+**Answer (MC style):** 
+`nslookup -type=PTR 167.31.16.172.in-addr.arpa. 172.16.31.167` (first attempt) 
+`nslookup -type=PTR 172.16.31.167 172.16.31.167` (second attempt)
 
 **Concept / Why:**  
 This command queries the specified DNS server for the reverse DNS record by constructing the proper PTR record format.
@@ -626,7 +628,9 @@ CentOS Firewall Administration Guide
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** `nslookup -type=PTR 167.30.16.172.in-addr.arpa`
+**Answer (MC style):** 
+`nslookup -type=PTR 167.30.16.172.in-addr.arpa` (first attempt)
+`nslookup -type=PTR 172.16.30.167` (second attempt)
 
 **Concept / Why:**  
 This constructs the proper reverse DNS query format for nslookup.
@@ -840,7 +844,9 @@ Systemd Service Monitoring
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** `host www.happy.org` or `dig www.happy.org`
+**Answer (MC style):** 
+`host www.happy.org` (first attempt)
+`dig www.happy.org` (second attempt)
 
 **Concept / Why:**  
 Both commands query A records by default using system resolver settings.
@@ -1248,7 +1254,9 @@ LDAP Schema for DNS
 <details>
 <summary>Answer, Concept & Reference</summary>
 
-**Answer (MC style):** `dig @172.16.30.167 www.happy.org` or `host www.happy.org 172.16.30.167`
+**Answer (MC style):** 
+`dig @172.16.30.167 www.happy.org` (first attempt)
+`host www.happy.org 172.16.30.167` (second attempt) 
 
 **Concept / Why:**  
 The `@` syntax in dig or specifying the DNS server IP in host directs queries to a specific nameserver.
